@@ -8,9 +8,9 @@
 
 </div>
 
-## 样张展示 / Sample works
+## サンプル
 
-当前仓库暂不放入未经审核或借用其他 Panel 的图片。首批独立生成并完成方向审核后，再将样张补入此处。
+未審査の画像や他のPanelから借用したサンプルは掲載していません。独立生成と方向確認を終えた初回リリース後に追加します。
 
 写真には強い個性や感情がありますが、さらに意図的な再構成が必要なことがあります。**Panel 108** は写真の現実感を保ちながら、もう一方を独自の視覚言語へ翻訳します。アートポスター、出版物、展示、SNS、デザインのみの出力に適しています。
 
@@ -25,11 +25,11 @@
 
 [简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
 
-简体中文文件逐字保存本项目的原始提示词，并且是运行时唯一的创作与审美权威；其他版本用于阅读、文档与分享。
+中国語ファイルは本プロジェクトの原文プロンプトを保存し、実行時の唯一の創作・美学上の基準です。他の版は読解、文書、共有用です。
 
-**关键词：** 新民艺剪纸 · 扁平剪纸拼贴 · 版画肌理 · 2–4 色照片取色 · 章印感主视觉 · 大面积留白
+**キーワード：** 新民艺剪纸 · 扁平剪纸拼贴 · 版画肌理 · 2–4 色照片取色 · 章印感主视觉 · 大面积留白
 
-## 四种输出模式
+## 4つの出力モード
 
 - `top-bottom`：3:4 竖版原生结构，现实照片在上，Panel 108 设计在下，严格各占 50%。
 - `left-right`：现实照片在左，设计在右，严格各占 50%，不会旋转成上下结构。
@@ -38,7 +38,7 @@
 
 支持多比例、准确像素、文字自动生成／准确文字／无文字、图片目录批量处理，以及 `linked` 或 `independent` 壁纸关系。每次调用只创建一个新任务目录，最终交付为 PNG。
 
-## 开始使用 / Getting started
+## 使い始める
 
 ```bash
 git clone https://github.com/nevertoday/xxd-panel-108.git
@@ -46,13 +46,13 @@ mkdir -p ~/.codex/skills
 ln -s "$(pwd)/xxd-panel-108" ~/.codex/skills/xxd-panel-108
 ```
 
-也可以直接使用 `npx skills` 安装：
+`npx skills` でも直接インストールできます：
 
 ```bash
 npx skills add https://github.com/nevertoday/xxd-panel-108 --skill xxd-panel-108
 ```
 
-该命令会从 GitHub 获取仓库并安装同名 Skill；需要用户级 Codex 安装时，可追加 `--global --agent codex --yes`。安装后重新启动 Agent 会话，然后调用：
+このコマンドは GitHub から取得して同名の Skill をインストールします。ユーザー単位の Codex には末尾に `--global --agent codex --yes` を追加し、Agent セッションを再起動して呼び出します。
 
 ```text
 $xxd-panel-108
@@ -60,12 +60,12 @@ $xxd-panel-108
 
 完整规范：[SKILL.md](SKILL.md) · [运行适配器](references/xxd-panel-108-prompt.en.md) · [原始提示词](references/original-prompt/zh-CN.md)
 
-## 许可证
+## ライセンス
 
-本项目采用 **PolyForm Noncommercial License 1.0.0**。完整法律文本见 [LICENSE](LICENSE)，官方页面：<https://polyformproject.org/licenses/noncommercial/1.0.0>。
+本プロジェクトは **PolyForm Noncommercial License 1.0.0** で提供されます。全文は [LICENSE](LICENSE)、公式ページは <https://polyformproject.org/licenses/noncommercial/1.0.0> を参照してください。
 
-- 允许个人学习、研究、实验、测试、兴趣项目、私人娱乐，以及符合协议定义的非商业组织使用。
-- 非商业用途可以使用、复制、修改、制作衍生作品和分发，但分发时必须附带许可证及作者提供的 `Required Notice:`。
-- 禁止商业产品、商业服务、收费交付、出售访问权或预期商业应用；商业使用需另行取得版权方书面许可。
-- 仅授予明确写出的著作权与有限专利权，不授予商标权等其他权利，也不能擅自转授权或转让。
-- 违约通知后须在 32 天内纠正，否则许可终止；内容按现状提供，不作担保。
+- 個人の学習・研究・実験・テスト・趣味・私的娯楽、およびライセンスが定義する非営利組織の利用が許可されます。
+- 非営利目的なら使用、複製、改変、派生物の作成、配布ができますが、ライセンスと作者の `Required Notice:` を添付してください。
+- 商用製品・サービス、対価を受ける納品、アクセス販売、商用利用を予定した用途は禁止です。商用利用には別途書面許可が必要です。
+- 明記された著作権と限定特許権のみが許諾され、商標などの権利は与えられません。再許諾・譲渡もできません。
+- 違反通知後32日以内に是正しなければライセンスは終了します。本プロジェクトは現状有姿で保証されません。
