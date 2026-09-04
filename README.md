@@ -4,13 +4,28 @@
 
 把照片的识别性，重新剪成一张安静而有文化感的纸上构图
 
-[![Codex Skill](https://img.shields.io/badge/Codex-Skill-000000?style=flat-square)](./SKILL.md)
+
+<strong>简体中文</strong> · <a href="README.en.md">English</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a> · <a href="README.ar.md">العربية</a>
 
 </div>
 
 ## 样张展示 / Sample works
 
-当前仓库暂不放入未经审核或借用其他 Panel 的图片。首批独立生成并完成方向审核后，再将样张补入此处。
+本页样张均由 Panel 108 直接依据不同原始参考图独立生成，并已去除 AI 元数据。
+
+**16:9 横版左右样张**（左侧原图，右侧设计，严格 50:50）
+
+| sample-05 | sample-06 |
+|---|---|
+| ![sample-05](assets/examples/sample-05.png) | ![sample-06](assets/examples/sample-06.png) |
+| ![sample-07](assets/examples/sample-07.png) | ![sample-08](assets/examples/sample-08.png) |
+
+**3:4 竖版上下样张**（上方原图，下方设计，严格 50:50）
+
+| sample-09 | sample-10 |
+|---|---|
+| ![sample-09](assets/examples/sample-09.png) | ![sample-10](assets/examples/sample-10.png) |
+| ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
 
 有些照片已经有很强的身份和情绪，却还需要一种更有设计感的重新组织方式。**Panel 108** 保留照片的现实部分，再把另一半转译成自己的视觉语言，适合艺术海报、独立出版、展览图像、社交内容和纯设计图。
 
@@ -109,7 +124,7 @@ $xxd-panel-108
 <!-- xxd-panel-catalog:start -->
 ## XXD Panel 全系列项目
 
-108 个 Panel 各自保留独立的原始提示词与审美逻辑。下面连续列出 001–108 的全部项目地址和核心风格特点；当前项目以粗体标出。
+XXD Panel 当前系列已更新至 001–112；每个 Panel 仍保留独立的原始提示词与审美逻辑。下表是本项目发布时的历史目录，连续列出 001–108；当前项目以粗体标出。
 
 | 项目地址 | 风格特点 |
 |---|---|

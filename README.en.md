@@ -4,7 +4,6 @@
 
 Cut the photograph's identity into a quiet paper composition with cultural character
 
-[![Codex Skill](https://img.shields.io/badge/Codex-Skill-000000?style=flat-square)](./SKILL.md)
 
 <a href="README.md">简体中文</a> · <strong>English</strong> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a> · <a href="README.ar.md">العربية</a>
 
@@ -12,7 +11,21 @@ Cut the photograph's identity into a quiet paper composition with cultural chara
 
 ## Sample works
 
-This repository does not include unreviewed images or samples borrowed from another Panel. Independently generated and reviewed samples will be added here after the first release batch.
+The samples below were generated independently by Panel 108 from different original references and have had AI metadata removed.
+
+**16:9 landscape left–right samples** (original on the left, design on the right, strict 50:50)
+
+| sample-05 | sample-06 |
+|---|---|
+| ![sample-05](assets/examples/sample-05.png) | ![sample-06](assets/examples/sample-06.png) |
+| ![sample-07](assets/examples/sample-07.png) | ![sample-08](assets/examples/sample-08.png) |
+
+**3:4 portrait top–bottom samples** (original above, design below, strict 50:50)
+
+| sample-09 | sample-10 |
+|---|---|
+| ![sample-09](assets/examples/sample-09.png) | ![sample-10](assets/examples/sample-10.png) |
+| ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
 
 Some photographs already carry a strong identity and mood, but need a more deliberate visual reorganisation. **Panel 108** keeps the reality of the photograph and translates the other half through its own independent visual language, for art posters, independent publishing, exhibitions, social content, and design-only outputs.
 
@@ -98,7 +111,7 @@ This project is released under the **PolyForm Noncommercial License 1.0.0**. See
 <!-- xxd-panel-catalog:start -->
 ## XXD Panel catalogue
 
-Each of the 108 Panels keeps its own original prompt and aesthetic logic. This directory lists every project continuously from 001 to 108; the current project is bold.
+The current XXD Panel series runs from 001 through 112, and every Panel retains its own independent original prompt and aesthetic logic. The table below is the historical catalog as of this project’s release, listing 001 through 108; the current project is bold.
 
 | Project | Style |
 |---|---|

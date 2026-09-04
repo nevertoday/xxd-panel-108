@@ -4,7 +4,6 @@
 
 사진의 정체성을 고요하고 문화적인 종이 위 구성으로 다시 오립니다
 
-[![Codex Skill](https://img.shields.io/badge/Codex-Skill-000000?style=flat-square)](./SKILL.md)
 
 <a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="README.ja.md">日本語</a> · <strong>한국어</strong> · <a href="README.ar.md">العربية</a>
 
@@ -12,7 +11,21 @@
 
 ## 샘플 작품
 
-검토되지 않았거나 다른 Panel에서 빌린 이미지는 포함하지 않습니다. 독립 생성과 방향 검토를 마친 첫 릴리스 후 샘플을 추가합니다.
+아래 샘플은 서로 다른 원본 참고 이미지에서 Panel 108이 독립적으로 생성했으며 AI 메타데이터를 제거했습니다.
+
+**16:9 가로 좌우 샘플** (왼쪽 원본, 오른쪽 디자인, 엄격한 50:50)
+
+| sample-05 | sample-06 |
+|---|---|
+| ![sample-05](assets/examples/sample-05.png) | ![sample-06](assets/examples/sample-06.png) |
+| ![sample-07](assets/examples/sample-07.png) | ![sample-08](assets/examples/sample-08.png) |
+
+**3:4 세로 상하 샘플** (위 원본, 아래 디자인, 엄격한 50:50)
+
+| sample-09 | sample-10 |
+|---|---|
+| ![sample-09](assets/examples/sample-09.png) | ![sample-10](assets/examples/sample-10.png) |
+| ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
 
 사진은 이미 강한 정체성과 분위기를 담고 있지만, 더 의도적인 재구성이 필요할 때가 있습니다. **Panel 108**은 사진의 현실감을 유지하고 다른 절반을 독립적인 시각 언어로 번역합니다. 아트 포스터, 독립 출판, 전시 이미지, 소셜 콘텐츠와 디자인 전용 출력에 적합합니다.
 
@@ -88,7 +101,7 @@ $xxd-panel-108
 <!-- xxd-panel-catalog:start -->
 ## XXD Panel 전체 프로젝트
 
-108개 Panel은 각각 독립된 원본 프롬프트와 미학을 유지합니다. 001–108 프로젝트를 빠짐없이 나열하고 현재 프로젝트를 굵게 표시합니다.
+현재 XXD Panel 시리즈는 001–112까지 업데이트되었으며, 각 Panel은 독립된 원본 프롬프트와 미적 논리를 유지합니다. 아래 표는 이 프로젝트 공개 시점의 과거 목록으로 001–108을 연속해서 나열하며, 현재 프로젝트는 굵게 표시합니다.
 
 | Project | Style |
 |---|---|
