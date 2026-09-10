@@ -36,32 +36,6 @@
 - 目录输入会逐张隔离处理，不混用主体、文案或结果。
 - `design-only` 与壁纸模式只把照片作为依据，不把原图照片直接放进可见画面。
 
-## 使用窍门
-
-- **先给一张清楚的照片：** 先选一张主体、动作和关系都容易辨认的图，再决定输出方式与比例。
-- **一句话串起参数：** 直接说“上下对照 / 左右对照 / 纯设计 + 16:9 / 3:4 / 手机壁纸”，也可以补充电脑、平板或电子手表尺寸。
-- **把必须保留的内容说清楚：** 指定人物、物件、动作、关系和文字；避免同时规定过多布局细节，让风格有空间完成设计。
-- **文字有三种选择：** 让模型按图片智能生成、用 `--text exact --copy` 锁定逐字文案，或用 `--text none` 完全不要文字。
-- **说明现实区与设计区：** 上下或左右对照时，注明哪一侧保留照片、哪一侧负责设计转译；纯设计和壁纸则说明整张画布都要重新设计。
-- **先单张试，再批量做：** 先用一张图确认模式、比例、文字和语言，再把同一套参数用于目录批处理；每轮只改一个变量，结果更容易比较。
-
-## 原始提示词 · 五种语言
-
-[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
-
-简体中文文件逐字保存本项目的原始提示词，并且是运行时唯一的创作与审美权威；其他版本用于阅读、文档与分享。
-
-**关键词：** 新民艺剪纸 · 扁平剪纸拼贴 · 版画肌理 · 2–4 色照片取色 · 章印感主视觉 · 大面积留白
-
-## 四种输出模式
-
-- `top-bottom`：3:4 竖版原生结构，现实照片在上，Panel 108 设计在下，严格各占 50%。
-- `left-right`：现实照片在左，设计在右，严格各占 50%，不会旋转成上下结构。
-- `design-only`：整张画布只呈现本 Panel 的设计转译，照片只作为参考。
-- `wallpaper-pack`：按设备分别生成完整画布，不把一张图机械裁成多台设备。
-
-支持多比例、准确像素、文字自动生成／准确文字／无文字、图片目录批量处理，以及 `linked` 或 `independent` 壁纸关系。每次调用只创建一个新任务目录，最终交付为 PNG。
-
 ## 适用场景与解决的问题
 
 当照片主体很有辨识度，却被复杂背景、过度装饰或普通滤镜削弱时，108 用新民艺剪纸重新组织信息：上方保留真实照片，下方只留下主体、轮廓、姿态和叙事关系，转成扁平剪纸、章印感主视觉与版画肌理。
@@ -86,12 +60,14 @@
 | 一眼特点 | 小尺度章印感主体、平面剪纸色块、版画颗粒、大面积暖白留白 |
 | 如何尊重原图 | 保留身份、结构、姿态、光色；下方只做删减与符号化重构 |
 
-## 能力与边界
+## 使用窍门
 
-- `top-bottom` 默认 3:4，上下各 50%；`left-right` 左右各 50%，永不旋转成另一方向。
-- `design-only` 与 `wallpaper-pack` 全画布只显示设计转译；照片只是不可见参考。
-- 每张图从当前原图一次直达生成，禁止把中间结果、样张或其他 Panel 作品送入第二轮。
-- 所有交付都是完整 PNG 位图；不以 SVG、HTML、Canvas 或程序绘图替代成品。
+- **先给一张清楚的照片：** 先选一张主体、动作和关系都容易辨认的图，再决定输出方式与比例。
+- **一句话串起参数：** 直接说“上下对照 / 左右对照 / 纯设计 + 16:9 / 3:4 / 手机壁纸”，也可以补充电脑、平板或电子手表尺寸。
+- **把必须保留的内容说清楚：** 指定人物、物件、动作、关系和文字；避免同时规定过多布局细节，让风格有空间完成设计。
+- **文字有三种选择：** 让模型按图片智能生成、用 `--text exact --copy` 锁定逐字文案，或用 `--text none` 完全不要文字。
+- **说明现实区与设计区：** 上下或左右对照时，注明哪一侧保留照片、哪一侧负责设计转译；纯设计和壁纸则说明整张画布都要重新设计。
+- **先单张试，再批量做：** 先用一张图确认模式、比例、文字和语言，再把同一套参数用于目录批处理；每轮只改一个变量，结果更容易比较。
 
 ## 开始使用 / Getting started
 
@@ -115,56 +91,30 @@ $xxd-panel-108
 
 完整规范：[SKILL.md](SKILL.md) · [运行适配器](references/xxd-panel-108-prompt.en.md) · [原始提示词](references/original-prompt/zh-CN.md)
 
-<!-- xxd-readme-ads:start -->
-## 关于 XXD
+## 原始提示词 · 五种语言
 
-XXD 是小小东品牌名的缩写，本项目由小小东创建并维护：[@xiaoxiaodong01](https://x.com/xiaoxiaodong01)。
+[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
 
-## 小小东多端会员 · 699 元/年
+简体中文文件逐字保存本项目的原始提示词，并且是运行时唯一的创作与审美权威；其他版本用于阅读、文档与分享。
 
-> **广告与商业信息声明：** 以下二维码、会员与付费服务链接属于小小东的广告信息。是否扫码或购买完全自愿，不影响本开源项目的访问与使用。
+**关键词：** 新民艺剪纸 · 扁平剪纸拼贴 · 版画肌理 · 2–4 色照片取色 · 章印感主视觉 · 大面积留白
 
-一次年费，同时开通三项会员权益：**知识星球 + 小小东成员提示词库 + 全部 General Skills 会员**。三项权益合并在同一份会员中，无需分别购买。
+## 四种输出模式
 
-<!-- xxd-panel-command-system:start -->
+- `top-bottom`：3:4 竖版原生结构，现实照片在上，Panel 108 设计在下，严格各占 50%。
+- `left-right`：现实照片在左，设计在右，严格各占 50%，不会旋转成上下结构。
+- `design-only`：整张画布只呈现本 Panel 的设计转译，照片只作为参考。
+- `wallpaper-pack`：按设备分别生成完整画布，不把一张图机械裁成多台设备。
 
-### Skills 如何协作
+支持多比例、准确像素、文字自动生成／准确文字／无文字、图片目录批量处理，以及 `linked` 或 `independent` 壁纸关系。每次调用只创建一个新任务目录，最终交付为 PNG。
 
-| 层级 | 包含内容 | 用途 |
-|---|---|---|
-| **General** | [`xxd-panel-all`](https://github.com/xiaoxiaodong-ai/xxd-panel-all) | 识别可用的编号 Skills，按图片、主题和用途推荐，并组织多风格试稿与批量任务。 |
-| **Soldier** | `xxd-panel-NNN` | 每个编号执行自己的原始提示词与审美，完成 General 分派的具体任务。 |
+## 能力与边界
 
-<!-- xxd-panel-command-system:end -->
+- `top-bottom` 默认 3:4，上下各 50%；`left-right` 左右各 50%，永不旋转成另一方向。
+- `design-only` 与 `wallpaper-pack` 全画布只显示设计转译；照片只是不可见参考。
+- 每张图从当前原图一次直达生成，禁止把中间结果、样张或其他 Panel 作品送入第二轮。
+- 所有交付都是完整 PNG 位图；不以 SVG、HTML、Canvas 或程序绘图替代成品。
 
-### 会员权益
-
-1. **让小小东成为你的 AI 学习顾问**
-   在[知识星球](https://wx.zsxq.com/group/15554814142882)里随时提问，围绕 AI 学习、工具使用和实际项目获得答疑与建议。我会持续回复，并把有代表性的问题整理回会员内容中。
-2. **持续更新的成员提示词库**
-   [小小东成员提示词库](https://vip.xiaoxiaodong.ai/)当前约有 3.2 万条提示词，会持续整理和扩充，目标超过 10 万条。
-3. **全部 General Skills 与使用答疑**
-   一份会员覆盖全部 General Skills；使用过程中遇到问题，可以获得相应的使用说明与答疑。
-4. **高频刚需优先处理**
-   会员提出的高频、刚需提示词与 Skills 需求，会优先评估和开发。
-
-### 如何开通
-
-- 可在[成员网站](https://vip.xiaoxiaodong.ai/)自助开通。
-- 也可以扫描下方二维码联系小小东，由我协助开通。
-
-<p align="center"><a href="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png"><img src="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png" alt="联系小小东" width="280"></a></p>
-<!-- xxd-readme-ads:end -->
-
-## 许可证
-
-本项目采用 **PolyForm Noncommercial License 1.0.0**。完整法律文本见 [LICENSE](LICENSE)，官方页面：<https://polyformproject.org/licenses/noncommercial/1.0.0>。
-
-- 允许个人学习、研究、实验、测试、兴趣项目、私人娱乐，以及符合协议定义的非商业组织使用。
-- 非商业用途可以使用、复制、修改、制作衍生作品和分发，但分发时必须附带许可证及作者提供的 `Required Notice:`。
-- 禁止商业产品、商业服务、收费交付、出售访问权或预期商业应用；商业使用需另行取得版权方书面许可。
-- 仅授予明确写出的著作权与有限专利权，不授予商标权等其他权利，也不能擅自转授权或转让。
-- 违约通知后须在 32 天内纠正，否则许可终止；内容按现状提供，不作担保。
 <!-- xxd-panel-catalog:start -->
 ## XXD Panel 全系列项目
 
@@ -281,3 +231,54 @@ XXD Panel 当前系列已更新至 001–112；每个 Panel 仍保留独立的�
 | [xxd-panel-107](https://github.com/nevertoday/xxd-panel-107) | 图像替词诗 · 可读 Rebus 句子 · 现代手绘图像词 · 明快柔和色块 · 严格 50:50 双区 · 大量留白 |
 | **[xxd-panel-108](https://github.com/nevertoday/xxd-panel-108)** | 当代民艺剪纸 · 简化剪影 · 手撕边 · 鲜活照片取色 · 印刷肌理 · 大面积留白 |
 <!-- xxd-panel-catalog:end -->
+
+<!-- xxd-readme-ads:start -->
+## 关于 XXD
+
+XXD 是小小东品牌名的缩写，本项目由小小东创建并维护：[@xiaoxiaodong01](https://x.com/xiaoxiaodong01)。
+
+## 小小东多端会员 · 699 元/年
+
+> **广告与商业信息声明：** 以下二维码、会员与付费服务链接属于小小东的广告信息。是否扫码或购买完全自愿，不影响本开源项目的访问与使用。
+
+一次年费，同时开通三项会员权益：**知识星球 + 小小东成员提示词库 + 全部 General Skills 会员**。三项权益合并在同一份会员中，无需分别购买。
+
+<!-- xxd-panel-command-system:start -->
+
+### Skills 如何协作
+
+| 层级 | 包含内容 | 用途 |
+|---|---|---|
+| **General** | [`xxd-panel-all`](https://github.com/xiaoxiaodong-ai/xxd-panel-all) | 识别可用的编号 Skills，按图片、主题和用途推荐，并组织多风格试稿与批量任务。 |
+| **Soldier** | `xxd-panel-NNN` | 每个编号执行自己的原始提示词与审美，完成 General 分派的具体任务。 |
+
+<!-- xxd-panel-command-system:end -->
+
+### 会员权益
+
+1. **让小小东成为你的 AI 学习顾问**
+   在[知识星球](https://wx.zsxq.com/group/15554814142882)里随时提问，围绕 AI 学习、工具使用和实际项目获得答疑与建议。我会持续回复，并把有代表性的问题整理回会员内容中。
+2. **持续更新的成员提示词库**
+   [小小东成员提示词库](https://vip.xiaoxiaodong.ai/)当前约有 3.2 万条提示词，会持续整理和扩充，目标超过 10 万条。
+3. **全部 General Skills 与使用答疑**
+   一份会员覆盖全部 General Skills；使用过程中遇到问题，可以获得相应的使用说明与答疑。
+4. **高频刚需优先处理**
+   会员提出的高频、刚需提示词与 Skills 需求，会优先评估和开发。
+
+### 如何开通
+
+- 可在[成员网站](https://vip.xiaoxiaodong.ai/)自助开通。
+- 也可以扫描下方二维码联系小小东，由我协助开通。
+
+<p align="center"><a href="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png"><img src="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png" alt="联系小小东" width="280"></a></p>
+<!-- xxd-readme-ads:end -->
+
+## 许可证
+
+本项目采用 **PolyForm Noncommercial License 1.0.0**。完整法律文本见 [LICENSE](LICENSE)，官方页面：<https://polyformproject.org/licenses/noncommercial/1.0.0>。
+
+- 允许个人学习、研究、实验、测试、兴趣项目、私人娱乐，以及符合协议定义的非商业组织使用。
+- 非商业用途可以使用、复制、修改、制作衍生作品和分发，但分发时必须附带许可证及作者提供的 `Required Notice:`。
+- 禁止商业产品、商业服务、收费交付、出售访问权或预期商业应用；商业使用需另行取得版权方书面许可。
+- 仅授予明确写出的著作权与有限专利权，不授予商标权等其他权利，也不能擅自转授权或转让。
+- 违约通知后须在 32 天内纠正，否则许可终止；内容按现状提供，不作担保。

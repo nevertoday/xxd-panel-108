@@ -32,6 +32,28 @@
 - **사진 영역과 디자인 영역을 설명하세요:** 상하·좌우에서는 사진을 남길 쪽과 다시 디자인할 쪽을 말하고, 순수 디자인·배경화면은 전체 캔버스를 다시 설계한다고 알려 주세요.
 - **한 장을 먼저 시험한 뒤 일괄 처리하세요:** 모드, 비율, 텍스트, 언어를 한 장에서 확인하고 같은 설정을 폴더에 적용합니다. 비교를 위해 한 번에 한 변수만 바꾸세요.
 
+## 시작하기
+
+```bash
+git clone https://github.com/nevertoday/xxd-panel-108.git
+mkdir -p ~/.codex/skills
+ln -s "$(pwd)/xxd-panel-108" ~/.codex/skills/xxd-panel-108
+```
+
+`npx skills`로도 바로 설치할 수 있습니다:
+
+```bash
+npx skills add https://github.com/nevertoday/xxd-panel-108 --skill xxd-panel-108
+```
+
+이 명령은 GitHub에서 저장소를 가져와 같은 이름의 Skill을 설치합니다. 사용자 전역 Codex 설치는 끝에 `--global --agent codex --yes`를 추가한 뒤 Agent 세션을 다시 시작해 호출하세요.
+
+```text
+$xxd-panel-108
+```
+
+전체 사양: [SKILL.md](SKILL.md) · [실행 어댑터](references/xxd-panel-108-prompt.en.md) · [원본 프롬프트](references/original-prompt/zh-CN.md)
+
 ## 원본 프롬프트 · 5개 언어
 
 [简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
@@ -63,78 +85,6 @@
 
 비교 모드는 제3 영역 없이 정확히 50:50입니다. 디자인 전용과 배경화면은 변환 결과만 표시합니다. 각 이미지는 현재 원본에서 한 번에 생성하며 중간 결과나 다른 Panel을 다시 입력하지 않습니다. 비율별로 독립 재구성하고 텍스트는 자동·정확 지정·없음 중 선택합니다. 최종 결과는 PNG 래스터입니다.
 
-## 시작하기
-
-```bash
-git clone https://github.com/nevertoday/xxd-panel-108.git
-mkdir -p ~/.codex/skills
-ln -s "$(pwd)/xxd-panel-108" ~/.codex/skills/xxd-panel-108
-```
-
-`npx skills`로도 바로 설치할 수 있습니다:
-
-```bash
-npx skills add https://github.com/nevertoday/xxd-panel-108 --skill xxd-panel-108
-```
-
-이 명령은 GitHub에서 저장소를 가져와 같은 이름의 Skill을 설치합니다. 사용자 전역 Codex 설치는 끝에 `--global --agent codex --yes`를 추가한 뒤 Agent 세션을 다시 시작해 호출하세요.
-
-```text
-$xxd-panel-108
-```
-
-전체 사양: [SKILL.md](SKILL.md) · [실행 어댑터](references/xxd-panel-108-prompt.en.md) · [원본 프롬프트](references/original-prompt/zh-CN.md)
-
-<!-- xxd-readme-ads:start -->
-## XXD 소개
-
-XXD는 Xiaoxiaodong 브랜드 이름의 약자입니다. 이 프로젝트는 [@xiaoxiaodong01](https://x.com/xiaoxiaodong01)이 만들고 관리합니다.
-
-## Xiaoxiaodong 멀티플랫폼 멤버십 · CNY 699/년
-
-> **광고 안내:** 아래 QR 코드와 멤버십·유료 서비스 링크는 XXD의 홍보 정보입니다. 스캔이나 구매는 선택 사항이며 오픈 소스 이용에는 영향을 주지 않습니다.
-
-연간 멤버십 하나로 **Knowledge Planet + XXD 회원 프롬프트 라이브러리 + 모든 General Skills 멤버십**을 함께 이용할 수 있습니다. 각각 따로 구매할 필요가 없습니다.
-
-<!-- xxd-panel-command-system:start -->
-
-### Skills가 함께 작동하는 방식
-
-| 등급 | 포함 내용 | 역할 |
-|---|---|---|
-| **General** | [`xxd-panel-all`](https://github.com/xiaoxiaodong-ai/xxd-panel-all) | 사용 가능한 번호형 Skills를 찾고, 이미지·주제·용도에 맞춰 추천하며, 여러 스타일과 일괄 작업을 정리합니다. |
-| **Soldier** | `xxd-panel-NNN` | 각 번호가 고유한 원본 프롬프트와 미학에 따라 General이 배정한 구체적인 작업을 완성합니다. |
-
-<!-- xxd-panel-command-system:end -->
-
-### 회원 혜택
-
-1. **Xiaoxiaodong을 AI 학습 상담자로**
-   [Knowledge Planet](https://wx.zsxq.com/group/15554814142882)에서 AI 학습, 도구, 실제 프로젝트에 대해 언제든 질문할 수 있습니다. 답변과 유용한 내용을 회원 자료로 계속 정리합니다.
-2. **계속 업데이트되는 회원 프롬프트 라이브러리**
-   [XXD 회원 프롬프트 라이브러리](https://vip.xiaoxiaodong.ai/)에는 현재 약 3만 2천 개의 프롬프트가 있으며, 10만 개 이상을 목표로 계속 확장합니다.
-3. **모든 General Skills와 사용 지원**
-   하나의 멤버십으로 모든 General Skills를 이용하고, 사용 중 도움이 필요할 때 안내와 Q&A를 받을 수 있습니다.
-4. **필요성이 높은 요청을 우선 검토**
-   회원이 제안한 수요가 높고 꼭 필요한 프롬프트와 Skills는 우선 검토하고 개발합니다.
-
-### 가입 방법
-
-- [회원 웹사이트에서 직접 가입](https://vip.xiaoxiaodong.ai/)할 수 있습니다.
-- 또는 아래 QR 코드로 Xiaoxiaodong에게 연락하면 가입을 도와드립니다.
-
-<p align="center"><a href="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png"><img src="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png" alt="Xiaoxiaodong 연락처" width="280"></a></p>
-<!-- xxd-readme-ads:end -->
-
-## 라이선스
-
-이 프로젝트는 **PolyForm Noncommercial License 1.0.0**에 따라 제공됩니다. 전체 법적 전문은 [LICENSE](LICENSE), 공식 페이지는 <https://polyformproject.org/licenses/noncommercial/1.0.0>에서 확인하세요.
-
-- 개인 학습·연구·실험·테스트·취미·비공개 오락과 라이선스가 정의한 비상업 조직의 사용을 허용합니다.
-- 비상업적 목적이면 사용·복사·수정·2차 저작물 작성·배포가 가능하지만 라이선스와 저자의 모든 `Required Notice:`를 함께 제공해야 합니다.
-- 상업 제품·서비스, 유료 납품, 접근권 판매와 예상되는 상업적 적용은 금지되며 별도 서면 허가가 필요합니다.
-- 명시된 저작권과 제한적 특허권만 부여되며 상표 등 다른 권리는 부여되지 않습니다. 재허여·양도도 금지됩니다.
-- 위반 서면 통지 후 32일 안에 시정하지 않으면 라이선스가 종료됩니다. 프로젝트는 있는 그대로 제공되며 보증하지 않습니다.
 <!-- xxd-panel-catalog:start -->
 ## XXD Panel 전체 프로젝트
 
@@ -251,3 +201,54 @@ XXD는 Xiaoxiaodong 브랜드 이름의 약자입니다. 이 프로젝트는 [@x
 | [xxd-panel-107](https://github.com/nevertoday/xxd-panel-107) | 이미지 낱말 시 · 읽을 수 있는 리버스 문장 · 현대 손그림 이미지 낱말 · 밝고 부드러운 색면 · 엄격한 50:50 이중 영역 · 넓은 여백 |
 | **[xxd-panel-108](https://github.com/nevertoday/xxd-panel-108)** | 현대 민속 종이 오리기 · 단순 실루엣 · 손찢은 가장자리 · 원본의 선명한 색 · 인쇄 질감 · 넓은 여백 |
 <!-- xxd-panel-catalog:end -->
+
+<!-- xxd-readme-ads:start -->
+## XXD 소개
+
+XXD는 Xiaoxiaodong 브랜드 이름의 약자입니다. 이 프로젝트는 [@xiaoxiaodong01](https://x.com/xiaoxiaodong01)이 만들고 관리합니다.
+
+## Xiaoxiaodong 멀티플랫폼 멤버십 · CNY 699/년
+
+> **광고 안내:** 아래 QR 코드와 멤버십·유료 서비스 링크는 XXD의 홍보 정보입니다. 스캔이나 구매는 선택 사항이며 오픈 소스 이용에는 영향을 주지 않습니다.
+
+연간 멤버십 하나로 **Knowledge Planet + XXD 회원 프롬프트 라이브러리 + 모든 General Skills 멤버십**을 함께 이용할 수 있습니다. 각각 따로 구매할 필요가 없습니다.
+
+<!-- xxd-panel-command-system:start -->
+
+### Skills가 함께 작동하는 방식
+
+| 등급 | 포함 내용 | 역할 |
+|---|---|---|
+| **General** | [`xxd-panel-all`](https://github.com/xiaoxiaodong-ai/xxd-panel-all) | 사용 가능한 번호형 Skills를 찾고, 이미지·주제·용도에 맞춰 추천하며, 여러 스타일과 일괄 작업을 정리합니다. |
+| **Soldier** | `xxd-panel-NNN` | 각 번호가 고유한 원본 프롬프트와 미학에 따라 General이 배정한 구체적인 작업을 완성합니다. |
+
+<!-- xxd-panel-command-system:end -->
+
+### 회원 혜택
+
+1. **Xiaoxiaodong을 AI 학습 상담자로**
+   [Knowledge Planet](https://wx.zsxq.com/group/15554814142882)에서 AI 학습, 도구, 실제 프로젝트에 대해 언제든 질문할 수 있습니다. 답변과 유용한 내용을 회원 자료로 계속 정리합니다.
+2. **계속 업데이트되는 회원 프롬프트 라이브러리**
+   [XXD 회원 프롬프트 라이브러리](https://vip.xiaoxiaodong.ai/)에는 현재 약 3만 2천 개의 프롬프트가 있으며, 10만 개 이상을 목표로 계속 확장합니다.
+3. **모든 General Skills와 사용 지원**
+   하나의 멤버십으로 모든 General Skills를 이용하고, 사용 중 도움이 필요할 때 안내와 Q&A를 받을 수 있습니다.
+4. **필요성이 높은 요청을 우선 검토**
+   회원이 제안한 수요가 높고 꼭 필요한 프롬프트와 Skills는 우선 검토하고 개발합니다.
+
+### 가입 방법
+
+- [회원 웹사이트에서 직접 가입](https://vip.xiaoxiaodong.ai/)할 수 있습니다.
+- 또는 아래 QR 코드로 Xiaoxiaodong에게 연락하면 가입을 도와드립니다.
+
+<p align="center"><a href="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png"><img src="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png" alt="Xiaoxiaodong 연락처" width="280"></a></p>
+<!-- xxd-readme-ads:end -->
+
+## 라이선스
+
+이 프로젝트는 **PolyForm Noncommercial License 1.0.0**에 따라 제공됩니다. 전체 법적 전문은 [LICENSE](LICENSE), 공식 페이지는 <https://polyformproject.org/licenses/noncommercial/1.0.0>에서 확인하세요.
+
+- 개인 학습·연구·실험·테스트·취미·비공개 오락과 라이선스가 정의한 비상업 조직의 사용을 허용합니다.
+- 비상업적 목적이면 사용·복사·수정·2차 저작물 작성·배포가 가능하지만 라이선스와 저자의 모든 `Required Notice:`를 함께 제공해야 합니다.
+- 상업 제품·서비스, 유료 납품, 접근권 판매와 예상되는 상업적 적용은 금지되며 별도 서면 허가가 필요합니다.
+- 명시된 저작권과 제한적 특허권만 부여되며 상표 등 다른 권리는 부여되지 않습니다. 재허여·양도도 금지됩니다.
+- 위반 서면 통지 후 32일 안에 시정하지 않으면 라이선스가 종료됩니다. 프로젝트는 있는 그대로 제공되며 보증하지 않습니다.

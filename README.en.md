@@ -23,32 +23,6 @@ Cut the photograph's identity into a quiet paper composition with cultural chara
 | sample-11 | sample-12 |
 | ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
 
-## Usage tips
-
-- **Start with one clear photo:** choose a source whose subject, action, and relationships are easy to recognize before choosing the delivery format.
-- **Join the parameters in one sentence:** say “top-bottom / left-right / design-only + 16:9 / 3:4 / phone wallpaper”; you can also name desktop, tablet, or smartwatch sizes.
-- **State what must stay:** identify the people, objects, actions, relationships, and copy to preserve, while leaving room for the style to design the layout.
-- **Choose a text mode:** let the model write from the image, lock exact wording with `--text exact --copy`, or remove text completely with `--text none`.
-- **Clarify reality and design regions:** for top-bottom or left-right, say which region keeps the photograph and which region is redesigned; for design-only and wallpapers, say that the whole canvas is redesigned.
-- **Test one image before batching:** confirm mode, ratio, text, and language on one source, then reuse the settings for a folder; change one variable per iteration.
-
-## Original prompt · five languages
-
-[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
-
-The Chinese file preserves this project’s original prompt and is the sole creative and aesthetic authority at runtime; the other versions are for reading, documentation, and sharing.
-
-**Keywords:** new folk paper-cutting · flat paper-cut collage · printmaking texture · 2–4 source-derived colours · seal-like key visual · generous negative space
-
-## Four output modes
-
-- `top-bottom`: native 3:4 portrait structure, with the reality photograph above and Panel 108's design below, exactly 50% each.
-- `left-right`: reality photograph left and design right, exactly 50% each; never rotated into a top-bottom structure.
-- `design-only`: the full canvas contains only this Panel's design transformation; the photograph is reference material only.
-- `wallpaper-pack`: generate a complete canvas separately for each device rather than mechanically cropping one image.
-
-Supports multiple ratios, exact pixels, prompt-generated／exact／no-text modes, directory batches, and `linked` or `independent` wallpaper relationships. Each invocation creates one fresh task directory and delivers PNG files.
-
 ## Best-fit situations and problems solved
 
 Panel 108 is for photographs whose identity is strong but whose background or ordinary treatment dilutes it. It retains the faithful photograph and rebuilds the design region through contemporary folk paper-cutting: silhouettes, flat colour, carved lines, positive–negative forms, print grain, and generous warm-paper space.
@@ -57,17 +31,14 @@ Panel 108 is for photographs whose identity is strong but whose background or or
 - It removes irrelevant detail, selects 2–4 recognisable source colours, and keeps one seal-like visual centre instead of competing focal points.
 - It avoids realistic illustration, glossy vectors, 3D rendering, commercial headline stacks, and template-like craft products.
 
-## Quick fit check
+## Usage tips
 
-| Question | Panel 108's answer |
-|---|---|
-| Result | One complete poster pairing faithful reality with a new-folk paper-cut transformation |
-| Signature | Flat cut-paper shapes, print grain, a seal-like focal form, and expansive warm whitespace |
-| Source fidelity | Identity, structure, pose, light, and colour remain recognisable; only irrelevant information is removed |
-
-## Complete capability and boundaries
-
-Comparison modes always contain exactly two 50:50 regions with no third band. Design-only and wallpaper outputs show only the transformed design. Each asset is generated directly from its current source in one pass, never from an intermediate result or another Panel. Multiple ratios are independently recomposed; text may be prompt-generated, exact, or absent. Final delivery is PNG raster artwork—never SVG, HTML, Canvas, or programmatic drawing.
+- **Start with one clear photo:** choose a source whose subject, action, and relationships are easy to recognize before choosing the delivery format.
+- **Join the parameters in one sentence:** say “top-bottom / left-right / design-only + 16:9 / 3:4 / phone wallpaper”; you can also name desktop, tablet, or smartwatch sizes.
+- **State what must stay:** identify the people, objects, actions, relationships, and copy to preserve, while leaving room for the style to design the layout.
+- **Choose a text mode:** let the model write from the image, lock exact wording with `--text exact --copy`, or remove text completely with `--text none`.
+- **Clarify reality and design regions:** for top-bottom or left-right, say which region keeps the photograph and which region is redesigned; for design-only and wallpapers, say that the whole canvas is redesigned.
+- **Test one image before batching:** confirm mode, ratio, text, and language on one source, then reuse the settings for a folder; change one variable per iteration.
 
 ## Getting started
 
@@ -91,56 +62,35 @@ $xxd-panel-108
 
 Complete specification: [SKILL.md](SKILL.md) · [runtime adapter](references/xxd-panel-108-prompt.en.md) · [original prompt](references/original-prompt/zh-CN.md)
 
-<!-- xxd-readme-ads:start -->
-## About XXD
+## Original prompt · five languages
 
-XXD is Xiaoxiaodong's abbreviated brand name. This project is created and maintained by [@xiaoxiaodong01](https://x.com/xiaoxiaodong01).
+[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
 
-## Xiaoxiaodong multi-platform membership · CNY 699/year
+The Chinese file preserves this project’s original prompt and is the sole creative and aesthetic authority at runtime; the other versions are for reading, documentation, and sharing.
 
-> **Advertising disclosure:** The QR code, membership, and paid-service links below are XXD promotional information. Scanning or purchasing is entirely optional and does not affect access to this open-source project.
+**Keywords:** new folk paper-cutting · flat paper-cut collage · printmaking texture · 2–4 source-derived colours · seal-like key visual · generous negative space
 
-One annual membership unlocks three benefits together: **Knowledge Planet + the XXD Member Prompt Library + membership for all General Skills**. They are included in one membership; no separate purchase is required.
+## Four output modes
 
-<!-- xxd-panel-command-system:start -->
+- `top-bottom`: native 3:4 portrait structure, with the reality photograph above and Panel 108's design below, exactly 50% each.
+- `left-right`: reality photograph left and design right, exactly 50% each; never rotated into a top-bottom structure.
+- `design-only`: the full canvas contains only this Panel's design transformation; the photograph is reference material only.
+- `wallpaper-pack`: generate a complete canvas separately for each device rather than mechanically cropping one image.
 
-### How the Skills work together
+Supports multiple ratios, exact pixels, prompt-generated／exact／no-text modes, directory batches, and `linked` or `independent` wallpaper relationships. Each invocation creates one fresh task directory and delivers PNG files.
 
-| Level | Included | What it does |
-|---|---|---|
-| **General** | [`xxd-panel-all`](https://github.com/xiaoxiaodong-ai/xxd-panel-all) | Detects available numbered Skills, recommends them by image, theme, or use, and organizes multi-style and batch tasks. |
-| **Soldier** | `xxd-panel-NNN` | Each numbered Skill follows its own original brief and aesthetic to complete the specific task assigned by the General. |
+## Quick fit check
 
-<!-- xxd-panel-command-system:end -->
+| Question | Panel 108's answer |
+|---|---|
+| Result | One complete poster pairing faithful reality with a new-folk paper-cut transformation |
+| Signature | Flat cut-paper shapes, print grain, a seal-like focal form, and expansive warm whitespace |
+| Source fidelity | Identity, structure, pose, light, and colour remain recognisable; only irrelevant information is removed |
 
-### What you receive
+## Complete capability and boundaries
 
-1. **Make Xiaoxiaodong your AI learning advisor**
-   Ask questions anytime in [Knowledge Planet](https://wx.zsxq.com/group/15554814142882) about AI learning, tools, and real projects. Xiaoxiaodong replies and turns useful questions into member resources.
-2. **A growing member prompt library**
-   The [XXD Member Prompt Library](https://vip.xiaoxiaodong.ai/) currently contains about 32,000 prompts and will keep expanding, with a goal of exceeding 100,000.
-3. **All General Skills and usage support**
-   One membership covers every General Skill, with usage guidance and Q&A when you need help.
-4. **Priority for high-need requests**
-   Frequently requested, high-need prompts and Skills are reviewed and developed first where appropriate.
+Comparison modes always contain exactly two 50:50 regions with no third band. Design-only and wallpaper outputs show only the transformed design. Each asset is generated directly from its current source in one pass, never from an intermediate result or another Panel. Multiple ratios are independently recomposed; text may be prompt-generated, exact, or absent. Final delivery is PNG raster artwork—never SVG, HTML, Canvas, or programmatic drawing.
 
-### How to join
-
-- [Activate membership on the member website](https://vip.xiaoxiaodong.ai/).
-- Or scan the QR code below to contact Xiaoxiaodong for help with activation.
-
-<p align="center"><a href="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png"><img src="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png" alt="Contact Xiaoxiaodong" width="280"></a></p>
-<!-- xxd-readme-ads:end -->
-
-## License
-
-This project is released under the **PolyForm Noncommercial License 1.0.0**. See [LICENSE](LICENSE) for the complete legal text and <https://polyformproject.org/licenses/noncommercial/1.0.0> for the official page.
-
-- Personal study, research, experiments, testing, hobbies, private entertainment, and the noncommercial organisations defined by the license are permitted.
-- For noncommercial purposes you may use, copy, modify, create derivative works, and distribute, provided you include the license and every `Required Notice:` supplied by the author.
-- Commercial products or services, paid delivery, selling access, and anticipated commercial applications are prohibited; obtain separate written permission for commercial use.
-- Only the stated copyright and limited patent rights are granted. No trademark or other unstated rights are granted, and you may not sublicense or transfer the license.
-- After written notice of a violation, correct it within 32 days or the licenses end. The project is provided as is, without warranties.
 <!-- xxd-panel-catalog:start -->
 ## XXD Panel catalogue
 
@@ -257,3 +207,54 @@ The current XXD Panel series runs from 001 through 112, and every Panel retains 
 | [xxd-panel-107](https://github.com/nevertoday/xxd-panel-107) | image-word poetry · readable rebus sentence · modern hand-drawn image words · luminous soft blocks · exact 50:50 pairing · generous whitespace |
 | **[xxd-panel-108](https://github.com/nevertoday/xxd-panel-108)** | contemporary folk paper-cut collage · simplified silhouettes · torn edges · vivid source colour · print texture · generous whitespace |
 <!-- xxd-panel-catalog:end -->
+
+<!-- xxd-readme-ads:start -->
+## About XXD
+
+XXD is Xiaoxiaodong's abbreviated brand name. This project is created and maintained by [@xiaoxiaodong01](https://x.com/xiaoxiaodong01).
+
+## Xiaoxiaodong multi-platform membership · CNY 699/year
+
+> **Advertising disclosure:** The QR code, membership, and paid-service links below are XXD promotional information. Scanning or purchasing is entirely optional and does not affect access to this open-source project.
+
+One annual membership unlocks three benefits together: **Knowledge Planet + the XXD Member Prompt Library + membership for all General Skills**. They are included in one membership; no separate purchase is required.
+
+<!-- xxd-panel-command-system:start -->
+
+### How the Skills work together
+
+| Level | Included | What it does |
+|---|---|---|
+| **General** | [`xxd-panel-all`](https://github.com/xiaoxiaodong-ai/xxd-panel-all) | Detects available numbered Skills, recommends them by image, theme, or use, and organizes multi-style and batch tasks. |
+| **Soldier** | `xxd-panel-NNN` | Each numbered Skill follows its own original brief and aesthetic to complete the specific task assigned by the General. |
+
+<!-- xxd-panel-command-system:end -->
+
+### What you receive
+
+1. **Make Xiaoxiaodong your AI learning advisor**
+   Ask questions anytime in [Knowledge Planet](https://wx.zsxq.com/group/15554814142882) about AI learning, tools, and real projects. Xiaoxiaodong replies and turns useful questions into member resources.
+2. **A growing member prompt library**
+   The [XXD Member Prompt Library](https://vip.xiaoxiaodong.ai/) currently contains about 32,000 prompts and will keep expanding, with a goal of exceeding 100,000.
+3. **All General Skills and usage support**
+   One membership covers every General Skill, with usage guidance and Q&A when you need help.
+4. **Priority for high-need requests**
+   Frequently requested, high-need prompts and Skills are reviewed and developed first where appropriate.
+
+### How to join
+
+- [Activate membership on the member website](https://vip.xiaoxiaodong.ai/).
+- Or scan the QR code below to contact Xiaoxiaodong for help with activation.
+
+<p align="center"><a href="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png"><img src="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png" alt="Contact Xiaoxiaodong" width="280"></a></p>
+<!-- xxd-readme-ads:end -->
+
+## License
+
+This project is released under the **PolyForm Noncommercial License 1.0.0**. See [LICENSE](LICENSE) for the complete legal text and <https://polyformproject.org/licenses/noncommercial/1.0.0> for the official page.
+
+- Personal study, research, experiments, testing, hobbies, private entertainment, and the noncommercial organisations defined by the license are permitted.
+- For noncommercial purposes you may use, copy, modify, create derivative works, and distribute, provided you include the license and every `Required Notice:` supplied by the author.
+- Commercial products or services, paid delivery, selling access, and anticipated commercial applications are prohibited; obtain separate written permission for commercial use.
+- Only the stated copyright and limited patent rights are granted. No trademark or other unstated rights are granted, and you may not sublicense or transfer the license.
+- After written notice of a violation, correct it within 32 days or the licenses end. The project is provided as is, without warranties.
