@@ -23,6 +23,15 @@ Cut the photograph's identity into a quiet paper composition with cultural chara
 | sample-11 | sample-12 |
 | ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
 
+## Usage tips
+
+- **Start with one clear photo:** choose a source whose subject, action, and relationships are easy to recognize before choosing the delivery format.
+- **Join the parameters in one sentence:** say “top-bottom / left-right / design-only + 16:9 / 3:4 / phone wallpaper”; you can also name desktop, tablet, or smartwatch sizes.
+- **State what must stay:** identify the people, objects, actions, relationships, and copy to preserve, while leaving room for the style to design the layout.
+- **Choose a text mode:** let the model write from the image, lock exact wording with `--text exact --copy`, or remove text completely with `--text none`.
+- **Clarify reality and design regions:** for top-bottom or left-right, say which region keeps the photograph and which region is redesigned; for design-only and wallpapers, say that the whole canvas is redesigned.
+- **Test one image before batching:** confirm mode, ratio, text, and language on one source, then reuse the settings for a folder; change one variable per iteration.
+
 ## Original prompt · five languages
 
 [简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
@@ -55,10 +64,6 @@ Panel 108 is for photographs whose identity is strong but whose background or or
 | Result | One complete poster pairing faithful reality with a new-folk paper-cut transformation |
 | Signature | Flat cut-paper shapes, print grain, a seal-like focal form, and expansive warm whitespace |
 | Source fidelity | Identity, structure, pose, light, and colour remain recognisable; only irrelevant information is removed |
-
-## Transformation logic
-
-`read subject and narrative → retain defining anchors → select 2–4 source colours → reduce to silhouettes, paper shapes, carved lines, and negative forms → add print texture and editorial whitespace`
 
 ## Complete capability and boundaries
 
