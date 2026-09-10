@@ -11,30 +11,17 @@
 
 ## 샘플 작품
 
-아래 샘플은 서로 다른 원본 참고 이미지에서 Panel 108이 독립적으로 생성했으며 AI 메타데이터를 제거했습니다.
+本项目已发布 8 张实际样片，图片文件位于 `assets/examples/`。
 
-**16:9 가로 좌우 샘플** (왼쪽 원본, 오른쪽 디자인, 엄격한 50:50)
-
-| sample-05 | sample-06 |
-|---|---|
+| sample-05 | sample-07 | sample-09 | sample-11 |
+| --- | --- | --- | --- |
 | ![sample-05](assets/examples/sample-05.png) | ![sample-06](assets/examples/sample-06.png) |
+| sample-07 | sample-08 |
 | ![sample-07](assets/examples/sample-07.png) | ![sample-08](assets/examples/sample-08.png) |
-
-**3:4 세로 상하 샘플** (위 원본, 아래 디자인, 엄격한 50:50)
-
 | sample-09 | sample-10 |
-|---|---|
 | ![sample-09](assets/examples/sample-09.png) | ![sample-10](assets/examples/sample-10.png) |
+| sample-11 | sample-12 |
 | ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
-
-사진은 이미 강한 정체성과 분위기를 담고 있지만, 더 의도적인 재구성이 필요할 때가 있습니다. **Panel 108**은 사진의 현실감을 유지하고 다른 절반을 독립적인 시각 언어로 번역합니다. 아트 포스터, 독립 출판, 전시 이미지, 소셜 콘텐츠와 디자인 전용 출력에 적합합니다.
-
-사진과 디자인이 따로 노는 문제, 과도한 장식, 부족한 여백, 비율별 불안정한 결과를 해결합니다.
-
-- 사진 한 장은 독립적인 결과 한 장이 됩니다. 사진을 합치지 않습니다.
-- 위아래·좌우 비교는 제3 영역 없이 엄격한 50:50입니다.
-- 폴더 입력도 주체·문구·결과를 섞지 않고 개별 처리합니다.
-- `design-only`와 배경화면 모드에서는 사진을 참고로만 사용하고 변환되지 않은 사진을 보여주지 않습니다.
 
 ## 원본 프롬프트 · 5개 언어
 

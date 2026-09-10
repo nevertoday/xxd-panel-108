@@ -11,30 +11,17 @@ Cut the photograph's identity into a quiet paper composition with cultural chara
 
 ## Sample works
 
-The samples below were generated independently by Panel 108 from different original references and have had AI metadata removed.
+本项目已发布 8 张实际样片，图片文件位于 `assets/examples/`。
 
-**16:9 landscape left–right samples** (original on the left, design on the right, strict 50:50)
-
-| sample-05 | sample-06 |
-|---|---|
+| sample-05 | sample-07 | sample-09 | sample-11 |
+| --- | --- | --- | --- |
 | ![sample-05](assets/examples/sample-05.png) | ![sample-06](assets/examples/sample-06.png) |
+| sample-07 | sample-08 |
 | ![sample-07](assets/examples/sample-07.png) | ![sample-08](assets/examples/sample-08.png) |
-
-**3:4 portrait top–bottom samples** (original above, design below, strict 50:50)
-
 | sample-09 | sample-10 |
-|---|---|
 | ![sample-09](assets/examples/sample-09.png) | ![sample-10](assets/examples/sample-10.png) |
+| sample-11 | sample-12 |
 | ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
-
-Some photographs already carry a strong identity and mood, but need a more deliberate visual reorganisation. **Panel 108** keeps the reality of the photograph and translates the other half through its own independent visual language, for art posters, independent publishing, exhibitions, social content, and design-only outputs.
-
-It addresses the common problems of image and design talking past each other, over-decoration, weak whitespace, and inconsistent delivery across formats.
-
-- One photograph becomes one isolated finished asset; photos are never combined.
-- Top-bottom and left-right comparisons are strict 50:50 with no third band.
-- Directory inputs are processed independently without cross-source subjects, copy, or results.
-- `design-only` and wallpaper modes use the photo as reference only; the untransformed photo is not shown.
 
 ## Original prompt · five languages
 
