@@ -1,0 +1,84 @@
+{
+  "skill_description": "XXD Panel 108｜New Folk Paper-Cut Journal: rebuilds the key subject, outline and pose of a photo as a contemporary folk-art paper-cut collage — silhouettes, flat colour pieces, carved lines and positive and negative shapes that look like separate sheets of coloured paper, slightly naive, symbolic and geometric, a small seal-like main motif set off-centre or near an edge inside large off-white paper space, screen-print grain, slight misregistration and faded ink with visible paper fibre, two to four distinct colours taken from the photo, and a few small notes such as a short title, number or colour reference in any language. Outputs PNG top-bottom or left-right comparisons, design-only images, or phone/tablet/desktop/watch wallpapers, from one photo or a folder. Use when the user invokes xxd-panel-108 or asks for folk-art paper-cut, screen-print collage or seal-like minimalist illustration from a photo.",
+  "short_description": "新民艺剪纸志：把照片剪成章印般的小块彩纸拼贴，带版画颗粒和大片留白",
+  "zh-CN": {
+    "name": "新民艺剪纸志",
+    "tagline": "把照片里最好认的形状，剪成一枚安静、有民艺味的彩纸拼贴。",
+    "look": "主体被概括成剪影、色块、刻线和正负形，像一块块独立彩纸剪好再拼起来，造型略稚拙、偏符号化和几何化。主体尺度很小，像一枚章印，偏到一边、贴边或局部裁切，四周是大片米白纸色，只配极少的辅助元素。色块边缘有手剪感、轻微套印偏差、掉墨和版画颗粒，能看到纸纤维。颜色只有从照片提出的二到四种，鲜明但克制。文字小而轻，可以是短标题、编号或色值标注，落在留白或边角，语种不限。",
+    "traits": ["民艺剪纸拼贴", "象征化轮廓", "版画颗粒", "2–4 色取色", "章印感主视觉", "大面积留白"],
+    "good": [
+      "轮廓鲜明、能剪成一块剪影的主体：一只鸟、一枝花、一座塔、一只猫",
+      "带文化或地方意味的物件和建筑：灯笼、茶壶、牌坊、老房子",
+      "想做成文创图案、节气海报、印章式标志或书籍封面的照片"
+    ],
+    "poor": [
+      "多个主体同样重要的场景，最后只会保留一个小小的视觉落点",
+      "需要写实透视或丰富细节的照片：街景全景、机械、人像特写",
+      "想要满版插画、卡通、3D 或光滑矢量效果的需求"
+    ]
+  },
+  "en": {
+    "name": "New Folk Paper-Cut Journal",
+    "tagline": "Cuts the most recognisable shapes of a photo into a quiet, folk-flavoured coloured-paper collage.",
+    "look": "The subject is summed up as silhouettes, colour pieces, carved lines and positive and negative shapes, like separate sheets of coloured paper cut out and reassembled, a little naive, symbolic and geometric. It is kept small, like a seal mark, set off to one side, against an edge or partly cropped, inside wide off-white paper space with very few supporting elements. Edges show hand-cut wobble, slight misregistration, faded ink and print grain, with paper fibre visible. Only two to four colours from the photo are used, distinct but restrained. Text is small and light, such as a short title, a number or a colour reference, set in the whitespace or a corner, in any language.",
+    "traits": ["Folk paper-cut collage", "Symbolic outlines", "Print grain", "Two to four photo colours", "Seal-like motif", "Wide whitespace"],
+    "good": [
+      "Subjects with a strong outline that could be cut as one silhouette: a bird, a sprig of flowers, a pagoda, a cat",
+      "Objects and buildings with cultural or local character: lanterns, a teapot, a memorial gate, an old house",
+      "Photos you want as a cultural-goods pattern, seasonal poster, seal-style mark or book cover"
+    ],
+    "poor": [
+      "Scenes where several subjects matter equally, since only one small focal motif remains",
+      "Photos that need real perspective or rich detail: street panoramas, machinery, close-up portraits",
+      "Requests for full-bleed illustration, cartoons, 3D or glossy vectors"
+    ]
+  },
+  "ja": {
+    "name": "新民藝切り絵誌",
+    "tagline": "写真のいちばんわかりやすい形を、静かで民藝の味わいのある色紙の切り絵コラージュにします。",
+    "look": "主役はシルエット、色面、彫り線、図と地の形にまとめられ、一枚ずつ切った色紙を組み直したように見えます。形は少し素朴で、記号的、幾何学的です。主役は印章のように小さく、片側に寄せたり、端に沿わせたり、一部を切ったりして、まわりは生成りの紙色の広い余白、添える要素はごくわずかです。色面の縁には手で切った揺れ、わずかな版ずれ、インクのかすれ、版画の粒子があり、紙の繊維も見えます。色は写真から取った二〜四色だけで、はっきりしつつも控えめです。文字は小さく軽く、短いタイトル、番号、色の表記などが余白や隅に置かれ、言語は自由です。",
+    "traits": ["民藝の切り絵コラージュ", "記号的な輪郭", "版画の粒子", "写真から二〜四色", "印章のような主役", "広い余白"],
+    "good": [
+      "輪郭がはっきりして一枚のシルエットに切れる主役：一羽の鳥、一枝の花、塔、猫",
+      "文化や土地の味わいのある物や建物：提灯、急須、鳥居や牌楼、古い家",
+      "雑貨の柄、季節のポスター、印章風のマーク、本の表紙にしたい写真"
+    ],
+    "poor": [
+      "複数の主役が同じくらい大事な場面（小さな見どころがひとつ残るだけです）",
+      "本物の遠近や豊かな細部が必要な写真：街並みのパノラマ、機械、顔のアップ",
+      "画面いっぱいのイラスト、カートゥーン、3D、つるっとしたベクターを求める場合"
+    ]
+  },
+  "ko": {
+    "name": "신민예 종이 오리기 기록",
+    "tagline": "사진에서 가장 알아보기 쉬운 형태를 고요하고 민예 맛이 나는 색종이 콜라주로 오려 냅니다.",
+    "look": "주인공은 실루엣, 색면, 새긴 선, 양형과 음형으로 요약되어, 한 장씩 오린 색종이를 다시 붙인 것처럼 보입니다. 형태는 조금 서툴고 기호적이며 기하학적입니다. 주인공은 도장처럼 작게, 한쪽으로 비키거나 가장자리에 붙거나 일부가 잘린 채 놓이고, 주위는 미색 종이의 넓은 여백이며 곁들이는 요소는 아주 적습니다. 색면 가장자리에는 손으로 오린 흔들림, 살짝 어긋난 인쇄, 바랜 잉크, 판화 입자가 있고 종이 섬유가 보입니다. 색은 사진에서 가져온 두 가지에서 네 가지뿐이며 선명하지만 절제되어 있습니다. 글자는 작고 가벼우며, 짧은 제목, 번호, 색상 표기 등이 여백이나 모서리에 놓이고 언어는 자유입니다.",
+    "traits": ["민예 종이 오리기 콜라주", "상징적 윤곽", "판화 입자", "사진에서 2–4색", "도장 같은 주인공", "넓은 여백"],
+    "good": [
+      "윤곽이 뚜렷해 실루엣 하나로 오릴 수 있는 주인공: 새 한 마리, 꽃가지, 탑, 고양이",
+      "문화나 지역의 맛이 있는 사물과 건물: 등롱, 찻주전자, 패루, 옛집",
+      "굿즈 무늬, 절기 포스터, 도장 같은 마크, 책 표지로 쓰고 싶은 사진"
+    ],
+    "poor": [
+      "여러 주인공이 똑같이 중요한 장면(작은 시선의 중심 하나만 남습니다)",
+      "실제 원근이나 풍부한 세부가 필요한 사진: 거리 파노라마, 기계, 얼굴 클로즈업",
+      "화면을 꽉 채운 일러스트, 카툰, 3D, 매끈한 벡터를 원하는 경우"
+    ]
+  },
+  "ar": {
+    "name": "سجل القصّ الورقي للفن الشعبي الجديد",
+    "tagline": "يقص أوضح أشكال الصورة كولاجاً هادئاً من الورق الملون بنكهة الفن الشعبي.",
+    "look": "يُلخَّص العنصر في ظلال ومساحات لونية وخطوط محفورة وأشكال موجبة وسالبة، كأنها أوراق ملونة منفصلة قُصّت ثم أُعيد تجميعها، بشيء من السذاجة والرمزية والهندسة. يبقى العنصر صغيراً كبصمة ختم، منزاحاً إلى جانب أو ملاصقاً لحافة أو مقصوصاً جزئياً، وسط فراغ ورقي واسع بلون أبيض مائل إلى الكريمي مع عناصر مساندة قليلة جداً. تُظهر الحواف ارتجاف القص اليدوي وانزياحاً طباعياً خفيفاً وحبراً باهتاً وحبيبات الطباعة، مع ألياف الورق الظاهرة. لا تُستعمل إلا لونان إلى أربعة من الصورة، واضحة لكنها متحفظة. النص صغير خفيف، كعنوان قصير أو رقم أو إشارة لونية، في الفراغ أو في زاوية، وبأي لغة.",
+    "traits": ["كولاج قصّ ورقي شعبي", "محيطات رمزية", "حبيبات الطباعة", "لونان إلى أربعة من الصورة", "عنصر كبصمة ختم", "فراغ واسع"],
+    "good": [
+      "عناصر ذات محيط قوي يمكن قصها ظلاً واحداً: طائر، غصن زهر، باغودا، قطة",
+      "أشياء ومبانٍ ذات طابع ثقافي أو محلي: فوانيس، إبريق شاي، بوابة تذكارية، بيت قديم",
+      "صور تريدها نقشاً لمنتجات ثقافية أو ملصقاً موسمياً أو علامة على هيئة ختم أو غلاف كتاب"
+    ],
+    "poor": [
+      "مشاهد تتساوى فيها أهمية عدة عناصر، إذ لا يبقى إلا عنصر صغير واحد للتركيز",
+      "صور تحتاج إلى منظور حقيقي أو تفاصيل غنية: بانوراما الشوارع، الآلات، صور الوجه القريبة",
+      "طلب رسم يملأ الصفحة أو كرتون أو ثلاثي الأبعاد أو متجهات لامعة"
+    ]
+  }
+}

@@ -2,228 +2,189 @@
 
 # XXD Panel 108｜New Folk Paper-Cut Journal
 
-Cut the photograph's identity into a quiet paper composition with cultural character
-
+**Cuts the most recognisable shapes of a photo into a quiet, folk-flavoured coloured-paper collage.**
 
 <a href="README.md">简体中文</a> · <strong>English</strong> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a> · <a href="README.ar.md">العربية</a>
 
 </div>
 
-## 16:9 Left–Right Samples
-
-Four independent sources on complete 16:9 canvases: reality left, this Panel's design right, exact 50:50. English copy is generated from each photograph.
-
 <table>
   <tr>
-    <td width="50%"><img src="./assets/examples/sample-05.png" alt="XXD Panel 108 Sample 5"></td>
-    <td width="50%"><img src="./assets/examples/sample-06.png" alt="XXD Panel 108 Sample 6"></td>
-  </tr>
-  <tr>
-    <td width="50%"><img src="./assets/examples/sample-07.png" alt="XXD Panel 108 Sample 7"></td>
-    <td width="50%"><img src="./assets/examples/sample-08.png" alt="XXD Panel 108 Sample 8"></td>
+    <td width="50%"><img src="./assets/examples/sample-09.png" alt="XXD Panel 108"></td>
+    <td width="50%"><img src="./assets/examples/sample-10.png" alt="XXD Panel 108"></td>
   </tr>
 </table>
 
-## 3:4 Top–Bottom Samples
+<p align="center"><sub>Top: the original photo. Bottom: the same photo in this style.</sub></p>
 
-Four further independent sources, different from the 16:9 set, regenerated as complete 3:4 top–bottom canvases. The original photograph remains above; the lower design follows this Panel's original brief.
+## What it is
 
-<table>
-  <tr>
-    <td width="50%"><img src="./assets/examples/sample-09.png" alt="XXD Panel 108 additional top-bottom sample 1"></td>
-    <td width="50%"><img src="./assets/examples/sample-10.png" alt="XXD Panel 108 additional top-bottom sample 2"></td>
-  </tr>
-  <tr>
-    <td width="50%"><img src="./assets/examples/sample-11.png" alt="XXD Panel 108 additional top-bottom sample 3"></td>
-    <td width="50%"><img src="./assets/examples/sample-12.png" alt="XXD Panel 108 additional top-bottom sample 4"></td>
-  </tr>
-</table>
+A Skill for AI agents such as Claude Code and Codex. Give it a photo and it paints a finished PNG following the original Panel 108 prompt.
 
+- **What it looks like:** The subject is summed up as silhouettes, colour pieces, carved lines and positive and negative shapes, like separate sheets of coloured paper cut out and reassembled, a little naive, symbolic and geometric. It is kept small, like a seal mark, set off to one side, against an edge or partly cropped, inside wide off-white paper space with very few supporting elements. Edges show hand-cut wobble, slight misregistration, faded ink and print grain, with paper fibre visible. Only two to four colours from the photo are used, distinct but restrained. Text is small and light, such as a short title, a number or a colour reference, set in the whitespace or a corner, in any language.
+- **Keywords:** Folk paper-cut collage · Symbolic outlines · Print grain · Two to four photo colours · Seal-like motif · Wide whitespace
+- **What you can make:** A top–bottom comparison (photo above, design below), a left–right comparison, the design alone, or a wallpaper set for phone, tablet, desktop and watch. Pick several at once, at any ratio or exact pixel size.
+- **What it is not:** Not a filter and not a template: every image is redrawn from your photo, and each photo is its own job.
 
-## Best-fit situations and problems solved
+## Get started in three steps
 
-Panel 108 is for photographs whose identity is strong but whose background or ordinary treatment dilutes it. It retains the faithful photograph and rebuilds the design region through contemporary folk paper-cutting: silhouettes, flat colour, carved lines, positive–negative forms, print grain, and generous warm-paper space.
-
-- Choose it for art posters, independent publishing, and exhibition work that need cultural and hand-made character without becoming rustic or childish.
-- It removes irrelevant detail, selects 2–4 recognisable source colours, and keeps one seal-like visual centre instead of competing focal points.
-- It avoids realistic illustration, glossy vectors, 3D rendering, commercial headline stacks, and template-like craft products.
-
-## Usage tips
-
-- **Start with one clear photo:** choose a source whose subject, action, and relationships are easy to recognize before choosing the delivery format.
-- **Join the parameters in one sentence:** say “top-bottom / left-right / design-only + 16:9 / 3:4 / phone wallpaper”; you can also name desktop, tablet, or smartwatch sizes.
-- **State what must stay:** identify the people, objects, actions, relationships, and copy to preserve, while leaving room for the style to design the layout.
-- **Choose a text mode:** let the model write from the image, lock exact wording with `--text exact --copy`, or remove text completely with `--text none`.
-- **Clarify reality and design regions:** for top-bottom or left-right, say which region keeps the photograph and which region is redesigned; for design-only and wallpapers, say that the whole canvas is redesigned.
-- **Test one image before batching:** confirm mode, ratio, text, and language on one source, then reuse the settings for a folder; change one variable per iteration.
-
-## Getting started
-
-```bash
-git clone https://github.com/nevertoday/xxd-panel-108.git
-mkdir -p ~/.codex/skills
-ln -s "$(pwd)/xxd-panel-108" ~/.codex/skills/xxd-panel-108
-```
-
-You can also install it directly with `npx skills`:
+**1. Install.** Works with Claude Code, Codex and other agents that support Skills:
 
 ```bash
 npx skills add https://github.com/nevertoday/xxd-panel-108 --skill xxd-panel-108
 ```
 
-The command fetches the repository from GitHub and installs the same-named Skill. For a user-level Codex installation, append `--global --agent codex --yes`; then restart the agent session and invoke:
+Then restart your agent session. You can also `git clone` this repository and link the folder to `~/.claude/skills/xxd-panel-108` or `~/.codex/skills/xxd-panel-108`.
+
+**2. Make sure your agent can generate images.** This Skill has no image model of its own; it uses your agent's image generation, preferably GPT Image 2.
+
+- Codex works as is when its built-in image generation is on.
+- Claude Code and other agents without built-in image generation need an OpenAI-compatible image API. It takes about five minutes: see [Setting up image generation](#setting-up-image-generation).
+
+Not sure? Just try it. If images can't be generated, the Skill stops and tells you before doing any work.
+
+**3. Send a photo and say one sentence:**
+
+> Use xxd-panel-108 to turn this photo into a 3:4 top–bottom poster with an English title.
+
+If your request is complete, it starts right away; anything you left out (layout, ratio, text) it asks about, usually in one or two questions. Results are PNGs in a new folder under `~/Desktop/xxd/xxd-panel-108/`.
+
+## Which photos work best
+
+**Works well**
+
+- Subjects with a strong outline that could be cut as one silhouette: a bird, a sprig of flowers, a pagoda, a cat
+- Objects and buildings with cultural or local character: lanterns, a teapot, a memorial gate, an old house
+- Photos you want as a cultural-goods pattern, seasonal poster, seal-style mark or book cover
+
+**Not a good fit**
+
+- Scenes where several subjects matter equally, since only one small focal motif remains
+- Photos that need real perspective or rich detail: street panoramas, machinery, close-up portraits
+- Requests for full-bleed illustration, cartoons, 3D or glossy vectors
+
+## Samples
+
+Each image below is a finished result this Skill made from one photo. The top–bottom and left–right sets use different photos.
+
+### Top–bottom: photo above, design below
+
+<table>
+  <tr>
+    <td width="50%"><img src="./assets/examples/sample-09.png" alt="XXD Panel 108"></td>
+    <td width="50%"><img src="./assets/examples/sample-10.png" alt="XXD Panel 108"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="./assets/examples/sample-11.png" alt="XXD Panel 108"></td>
+    <td width="50%"><img src="./assets/examples/sample-12.png" alt="XXD Panel 108"></td>
+  </tr>
+</table>
+
+### Left–right: photo left, design right
+
+<table>
+  <tr>
+    <td width="50%"><img src="./assets/examples/sample-05.png" alt="XXD Panel 108"></td>
+    <td width="50%"><img src="./assets/examples/sample-06.png" alt="XXD Panel 108"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="./assets/examples/sample-07.png" alt="XXD Panel 108"></td>
+    <td width="50%"><img src="./assets/examples/sample-08.png" alt="XXD Panel 108"></td>
+  </tr>
+</table>
+
+## Just say it
+
+No parameters to memorise. Say what you want:
+
+| You want | Say |
+|---|---|
+| Top–bottom comparison | Make a 3:4 top–bottom comparison |
+| Left–right comparison | Make a 16:9 left–right comparison, photo on the left |
+| Design only | Just the design, no photo, 9:16 portrait |
+| A wallpaper set | Make matching wallpapers for phone, tablet, desktop and watch |
+| Several ratios | Make this one at 1:1, 3:4 and 16:9 |
+| Your own text | Use the title “Let the wind pass through” exactly as written |
+| No text | No text at all |
+| Text language | Write the text in Japanese |
+| A whole folder | Turn every photo in this folder into a top–bottom comparison |
+| Same as last time | Use my settings from last time |
+
+Prefer the command line? The flags map one to one:
 
 ```text
-$xxd-panel-108
+/xxd-panel-108 photo.jpg --mode top-bottom --size 3:4 --text prompt --locale en-US
+/xxd-panel-108 photo.jpg --mode design-only --size 9:16 --text none
+/xxd-panel-108 ./photos --mode left-right --size 16:9 --text prompt --locale ja-JP
 ```
 
-Complete specification: [SKILL.md](SKILL.md) · [runtime adapter](references/xxd-panel-108-prompt.en.md) · [original prompt](references/original-prompt/zh-CN.md)
+All flags are listed under [Parameters](#parameters).
 
-## Original prompt · five languages
+## FAQ
 
-[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
+**Does the original photo have to appear?** No. Ask for “design only” or a wallpaper set and the whole canvas is design.
 
-The Chinese file preserves this project’s original prompt and is the sole creative and aesthetic authority at runtime; the other versions are for reading, documentation, and sharing.
+**Who writes the text?** By default the image model writes it from your photo; you only choose the language. Give your own words and they are used exactly; or ask for no text. Anything that looks factual (places, dates, numbers) comes only from you or from what is visible in the photo, never invented.
 
-**Keywords:** new folk paper-cutting · flat paper-cut collage · printmaking texture · 2–4 source-derived colours · seal-like key visual · generous negative space
+**What if I don't like the result?** Say “one more”. It redraws from the original photo instead of editing the last result, so every attempt is different.
 
-## Four output modes
+**Do photos in a batch mix together?** No. Each photo is generated on its own and never borrows another photo's colours, text or layout. Settings are asked once for the whole batch.
 
-- `top-bottom`: native 3:4 portrait structure, with the reality photograph above and Panel 108's design below, exactly 50% each.
-- `left-right`: reality photograph left and design right, exactly 50% each; never rotated into a top-bottom structure.
-- `design-only`: the full canvas contains only this Panel's design transformation; the photograph is reference material only.
-- `wallpaper-pack`: generate a complete canvas separately for each device rather than mechanically cropping one image.
+**Where do my photos go?** Only to the image model your agent uses. The Skill uploads nothing elsewhere and never prints endpoints or keys.
 
-Supports multiple ratios, exact pixels, prompt-generated／exact／no-text modes, directory batches, and `linked` or `independent` wallpaper relationships. Each invocation creates one fresh task directory and delivers PNG files.
+**How does this relate to other Panels?** XXD Panels are a family of styles, one per number, fully independent; install only the ones you like. To have AI recommend a style for a photo, or compare several at once, use the catalog [xxd-panel-all](https://github.com/nevertoday/xxd-panel-all).
 
-## Quick fit check
+## Original prompt
 
-| Question | Panel 108's answer |
+This style is defined entirely by Xiaoxiaodong's [original prompt](references/original-prompt/zh-CN.md) (in Chinese). The Skill only appends the layout, size and text settings you choose; it never summarises, translates or rewrites the prompt.
+
+Reading translations (for reading only; never sent to the image model): [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
+
+## Setting up image generation
+
+You need an OpenAI-compatible API that serves `gpt-image-2` (or a compatible model) and its API key. This creates a separate config and leaves your Codex settings alone:
+
+```bash
+mkdir -p ~/.xxd-imagegen
+cat > ~/.xxd-imagegen/config.toml <<'EOF'
+model_provider = "image"
+
+[model_providers.image]
+base_url = "https://api.openai.com/v1"   # or your compatible endpoint
+env_key = "XXD_IMAGE_API_KEY"
+EOF
+
+# add to ~/.zshrc or ~/.bashrc so your agent can read them
+echo 'export XXD_IMAGEGEN_CODEX_DIR=~/.xxd-imagegen' >> ~/.zshrc
+echo 'export XXD_IMAGE_API_KEY=your-key' >> ~/.zshrc
+```
+
+Reopen your terminal and agent, then check once from this Skill's folder:
+
+```bash
+python3 scripts/configured_imagegen.py probe
+```
+
+`"ok":true` means it works. The check only reports readiness; it never prints the endpoint or key. If your Codex already generates images through a compatible API, skip this step.
+
+## Parameters
+
+| Flag | Values |
 |---|---|
-| Result | One complete poster pairing faithful reality with a new-folk paper-cut transformation |
-| Signature | Flat cut-paper shapes, print grain, a seal-like focal form, and expansive warm whitespace |
-| Source fidelity | Identity, structure, pose, light, and colour remain recognisable; only irrelevant information is removed |
+| `--mode` | `top-bottom` · `left-right` · `design-only` · `wallpaper-pack` (phone, tablet, desktop, watch); combine freely |
+| `--size` | `auto` recommended · `source` match the photo · `1:1` `3:4` `4:3` `4:5` `5:4` `2:3` `3:2` `9:16` `16:9` `21:9` `5:7` `7:5` · exact pixels such as `2160x3840`; combine freely |
+| `--text` | `prompt` written from the photo · `exact` your words (with `--copy "…"`) · `none` no text |
+| `--locale` | text language, e.g. `zh-CN` `en-US` `ja-JP` `ko-KR` `ar` |
+| `--wallpaper` | `linked` a matching set · `independent` four separate designs |
+| `--wallpaper-size` | device pixels, e.g. `phone=1440x3200,desktop=3840x2160` |
+| `--out` | another output root (default `~/Desktop/xxd/xxd-panel-108/`) |
+| `--prefs` | `last` reuse · `edit` start from last time · `new` choose again · `off` don't remember this time · `clear` forget |
 
-## Complete capability and boundaries
-
-Comparison modes always contain exactly two 50:50 regions with no third band. Design-only and wallpaper outputs show only the transformed design. Each asset is generated directly from its current source in one pass, never from an intermediate result or another Panel. Multiple ratios are independently recomposed; text may be prompt-generated, exact, or absent. Final delivery is PNG raster artwork—never SVG, HTML, Canvas, or programmatic drawing.
-
-<!-- xxd-panel-catalog:start -->
-## XXD Panel catalogue
-
-The current XXD Panel series runs from 001 through 112, and every Panel retains its own independent original prompt and aesthetic logic. The table below is the historical catalog as of this project’s release, listing 001 through 108; the current project is bold.
-
-| Project | Style |
-|---|---|
-| [xxd-panel-001](https://github.com/nevertoday/xxd-panel-001) | NAÏVE LINE · RETRO PAPER · MIXED MEDIA · WITTY METAPHOR · WARM SPACE |
-| [xxd-panel-002](https://github.com/nevertoday/xxd-panel-002) | NARRATIVE CONTOUR · HESITANT LINE · ANALOGOUS COLOUR · SELECTIVE ENLARGEMENT · MISREGISTERED TYPE |
-| [xxd-panel-003](https://github.com/nevertoday/xxd-panel-003) | CONTINUOUS BLACK LINE · PUBLIC ISSUE · FORCE POINTS · SILENT SPACE · RELEASE |
-| [xxd-panel-004](https://github.com/nevertoday/xxd-panel-004) | LOCAL REALITY · PRECISE SINGLE LINE · GEOMETRIC PERSPECTIVE · THEME COLOUR · CITY-BRAND TYPE |
-| [xxd-panel-005](https://github.com/nevertoday/xxd-panel-005) | BLUNT MASSES · DARK STRUCTURAL FIELD · PARTIAL REVEAL · THREE-LAYER COLOUR · SCREENPRINT × PASTEL |
-| [xxd-panel-006](https://github.com/nevertoday/xxd-panel-006) | 10–20% SUBJECT · 80–90% PAPER · FINE HAND LINE · FOUR COLOURS MAX · FLAT ACRYLIC |
-| [xxd-panel-007](https://github.com/nevertoday/xxd-panel-007) | OBJECT-LIKE MINIATURES · CLOSE-UP / SECTION / REPEAT · STAGGERED PAPER · THIN BLACK NOTES |
-| [xxd-panel-008](https://github.com/nevertoday/xxd-panel-008) | ORTHOGRAPHIC ISOMETRIC · PLATFORMS / STAIRS / DOORS · SPATIAL PARADOX · DYNAMIC PASTELS · MATTE 3D |
-| [xxd-panel-009](https://github.com/nevertoday/xxd-panel-009) | TINY ANCHOR · VAST NEGATIVE SPACE · ONE SPATIAL RELATION · SPOT COLOUR · HALFTONE SCREENPRINT |
-| [xxd-panel-010](https://github.com/nevertoday/xxd-panel-010) | ROUGH BLACK SILHOUETTE · WHITE FEATURE CUTOUT · DRY-MEDIA PAPER · SPARSE SETTING MARKS · PICTURE-BOOK TYPE |
-| [xxd-panel-011](https://github.com/nevertoday/xxd-panel-011) | ONE CORE IMAGE · ONE RELATION · CONTINUOUS BLACK LINE · ACTIVE SILENCE · ONE MEMORY COLOUR |
-| [xxd-panel-012](https://github.com/nevertoday/xxd-panel-012) | DENSE EMERGENCE · SPARSE DIFFUSION · GEOMETRIC RESTRAINT · ONE VITAL COLOUR · BLACK-GREY MICROTYPE |
-| [xxd-panel-013](https://github.com/nevertoday/xxd-panel-013) | ONE HORIZONTAL TICKET · 74/26 SPLIT · HEALING WATERCOLOUR · IVORY SPACE · LOCALISED INFORMATION STUB |
-| [xxd-panel-014](https://github.com/nevertoday/xxd-panel-014) | FOLD AND FACET · LAYER AND NEST · SOURCE-LED WEIGHT · REAL PAPER FIBRE · READABLE PAPER TYPE |
-| [xxd-panel-015](https://github.com/nevertoday/xxd-panel-015) | DECONSTRUCT–SELECT–DISTIL–RECONSTRUCT · FEW FORMS · STRICT COLOUR ROLES · IVORY SPACE · ART-BOOK MICROTYPE |
-| [xxd-panel-016](https://github.com/nevertoday/xxd-panel-016) | ONE SUBJECT · ONE MOTION · A LARGE FIELD OF AIR |
-| [xxd-panel-017](https://github.com/nevertoday/xxd-panel-017) | ROUNDED FORM · ROUGH BROKEN LINE · PURE FLAT FILL · BRIGHT FIELDS · LIVELY ASYMMETRY |
-| [xxd-panel-018](https://github.com/nevertoday/xxd-panel-018) | ONE VISUAL ANCHOR · FEW DEPTH LAYERS · WARM-IVORY SPACE · MATTE PAPER · COMPLETE MICROTYPE |
-| [xxd-panel-019](https://github.com/nevertoday/xxd-panel-019) | RECOGNISE FIRST · REDUCE WITH INTENT · COMPOSE WITH TYPE |
-| [xxd-panel-020](https://github.com/nevertoday/xxd-panel-020) | IMPASTO ISLAND · DIMENSIONAL MINIATURE · REAL KNIFE MARKS · GENEROUS PAPER SPACE · RESTRAINED EDITORIAL TYPE |
-| [xxd-panel-021](https://github.com/nevertoday/xxd-panel-021) | PURE-BLACK RECTANGLE · SUBJECT MOSTLY INSIDE · ONE FEATURE BREAKS OUT · JITTERY PHOTOCOPY LINE · WHITE NEGATIVE FORM |
-| [xxd-panel-022](https://github.com/nevertoday/xxd-panel-022) | PURE-BLACK RECTANGLE · SUBJECT MOSTLY INSIDE · ONE FEATURE BREAKS OUT · CLEAN ELASTIC LINE · ONE COLOUR SIGNAL |
-| [xxd-panel-023](https://github.com/nevertoday/xxd-panel-023) | SOURCE-CHOSEN WINDOW · PALE BREATHING GROUND · LIVING COLOURED LIGHT · SPRAY GRAIN · DIFFUSE PROJECTION |
-| [xxd-panel-024](https://github.com/nevertoday/xxd-panel-024) | PHOTOGRAPHIC SUBJECT · NARROW PALE WINDOW · SOURCE-ADAPTIVE DIRECTION · EASTERN WHITESPACE · PREMIUM EDITORIAL TYPE |
-| [xxd-panel-025](https://github.com/nevertoday/xxd-panel-025) | FIRST-GLANCE SUBJECT · SECOND-GLANCE IMAGE · FIGURE–GROUND REVERSAL · 2–4 MORANDI COLOURS · PHYSICAL SCREENPRINT |
-| [xxd-panel-026](https://github.com/nevertoday/xxd-panel-026) | RECOGNISE QUIETLY · REDUCE GENTLY · LET THE PAPER BREATHE |
-| [xxd-panel-027](https://github.com/nevertoday/xxd-panel-027) | HEAVY IVORY PAPER · EMBOSS AND DEBOSS · FINE INCISION · MATTE-GOLD FOCUS · MUSEUM ORDER |
-| [xxd-panel-028](https://github.com/nevertoday/xxd-panel-028) | ORTHOGRAPHIC ISOMETRIC · SMALL PAPER BASE · SOURCE-DERIVED PALETTE · FINE INK · EDITORIAL MODEL |
-| [xxd-panel-029](https://github.com/nevertoday/xxd-panel-029) | HORIZONTAL FIELD · LIGHT WAX PASTEL · ROUGH HANDMADE PAPER · RISOGRAPH GRAIN · RELAXED HANDWRITING |
-| [xxd-panel-030](https://github.com/nevertoday/xxd-panel-030) | REAL BOTANICAL MATERIAL · RECTANGULAR FIELD · NATURAL CROSSING · MINIMAL BLACK LINE · EDITORIAL WHITESPACE |
-| [xxd-panel-031](https://github.com/nevertoday/xxd-panel-031) | ONE CORE MOTIF · SOURCE-DERIVED GEOMETRY · FOLK CATALOGUE · ROUGH INTERNAL INK · CRISP ORDER |
-| [xxd-panel-032](https://github.com/nevertoday/xxd-panel-032) | TEXT–IMAGE UNITY · NATIVE LETTERING · SOURCE FEATURE · OPTICAL SPACING · GENEROUS WHITESPACE |
-| [xxd-panel-033](https://github.com/nevertoday/xxd-panel-033) | RECOGNISABLE MOTIF · LAYERED COLLAGE · SCALE CONTRAST · VIVID SOURCE COLOUR · COVER TYPE |
-| [xxd-panel-034](https://github.com/nevertoday/xxd-panel-034) | SMALL STAMP · 2–4 SPOT INKS · HAND-CARVED LINE · WARM PAPER · FIELD ANNOTATION |
-| [xxd-panel-035](https://github.com/nevertoday/xxd-panel-035) | ONE BLOCK SUBJECT · VIVID SOURCE COLOUR · MATTE ABS · QUIET FIELD · MODULAR TYPE |
-| [xxd-panel-036](https://github.com/nevertoday/xxd-panel-036) | ONE RELATION · FINE LINE · 2–4 COLOUR FIELDS · WATERCOLOUR EDGE · BREATHING SPACE |
-| [xxd-panel-037](https://github.com/nevertoday/xxd-panel-037) | ONE BADGE · SOURCE ENAMEL · WHITE-METAL RIM · GILDED DETAIL · REAL SHADOW |
-| [xxd-panel-038](https://github.com/nevertoday/xxd-panel-038) | SOURCE FABRIC · FRAYED EDGE · HAND STITCH · ACTIVE WHITESPACE · HIDDEN FEELING |
-| [xxd-panel-039](https://github.com/nevertoday/xxd-panel-039) | ONE IMAGE · ONE ESSENCE · SILK DIRECTION · CLEAN GROUND · EASTERN SILENCE |
-| [xxd-panel-040](https://github.com/nevertoday/xxd-panel-040) | TRUTHFUL ANCHOR · BLACK-LINE FIGURES · MICRO-NARRATIVE · ACTIVE WHITESPACE |
-| [xxd-panel-041](https://github.com/nevertoday/xxd-panel-041) | THEME METAPHOR · ISOMETRIC ORDER · PALE MANUSCRIPT · JAPANESE COLOUR · EASTERN SPACE |
-| [xxd-panel-042](https://github.com/nevertoday/xxd-panel-042) | ORIGINAL VIEW · 2–5 TRUE LAYERS · STABLE ANCHOR · TRANSLUCENT WATERCOLOUR · EDITORIAL NOTE |
-| [xxd-panel-043](https://github.com/nevertoday/xxd-panel-043) | REAL LATHER · FRONTAL FLAT-LAY · SOURCE-DARK GROUND · MICRO-BUBBLE EDGE · QUIET SPACE |
-| [xxd-panel-044](https://github.com/nevertoday/xxd-panel-044) | THIN GOLD · FRONTAL PLANE · SOURCE-DARK GROUND · HAMMERED TRACE · QUIET ORDER |
-| [xxd-panel-045](https://github.com/nevertoday/xxd-panel-045) | ROUNDED MODULE · SOURCE COLOUR · ISOMETRIC DEPTH · MATTE TOUCH · EDITORIAL MICROTYPE |
-| [xxd-panel-046](https://github.com/nevertoday/xxd-panel-046) | BRIGHT GROUND · VIVID IMPASTO · MINIATURE VOLUME · DIAGONAL FIELD · WARM LIGHT |
-| [xxd-panel-047](https://github.com/nevertoday/xxd-panel-047) | ISOMETRIC MINIATURE · THEMATIC IMPASTO · REAL CONTACT · WARM-WHITE PAPER · LUMINOUS COLOUR |
-| [xxd-panel-048](https://github.com/nevertoday/xxd-panel-048) | TRANSPARENT STRUCTURE · SCIENTIFIC ILLUSTRATION · LUCID MONOCHROME · PRECISE ANNOTATION · EDITORIAL SPACE |
-| [xxd-panel-049](https://github.com/nevertoday/xxd-panel-049) | LIMITED-COLOUR WOODCUT · HAND-CARVED MARKS · MATTE INK · WARM PAPER · BROKEN EDGES |
-| [xxd-panel-050](https://github.com/nevertoday/xxd-panel-050) | BESPOKE TRAVEL SCENE · AIRY BLUE · MINIMAL FLAT VECTOR · EDITORIAL WHITESPACE · ONE IMAGE, ONE IDENTITY |
-| [xxd-panel-051](https://github.com/nevertoday/xxd-panel-051) | MINIATURE PAPER CRAFT · HORIZONTAL FLOATING LANDSCAPE · HANDMADE EVIDENCE · AIRY BLUE · VAST WHITESPACE |
-| [xxd-panel-052](https://github.com/nevertoday/xxd-panel-052) | PAPER-CRAFT MINIATURE · HORIZONTAL FLOATING STRIP · HANDMADE MATERIAL · AIRY COOL BLUE · GENEROUS SPACE |
-| [xxd-panel-053](https://github.com/nevertoday/xxd-panel-053) | OBSERVATIONAL PEN · TRANSPARENT WASH · MUSICAL RHYTHM · NEAR-WHITE PAPER · ACTIVE WHITESPACE |
-| [xxd-panel-054](https://github.com/nevertoday/xxd-panel-054) | SELECTIVE MEMORY · MAIN VISUAL · SIX STICKERS · MATTE PRINT · AIRY BLUE |
-| [xxd-panel-055](https://github.com/nevertoday/xxd-panel-055) | SUBJECT NARRATIVE · HEALING PASTELS · LIGHT OIL TEXTURE · AIRY BLUE · EDITORIAL SPACE |
-| [xxd-panel-056](https://github.com/nevertoday/xxd-panel-056) | CORE IMAGE · VAST WHITESPACE · WARM–COOL JUMPS · NAIVE HAND · VISUAL METAPHOR |
-| [xxd-panel-057](https://github.com/nevertoday/xxd-panel-057) | GEOMETRIC COMPOSITION · INTELLIGENT MOSAIC · ARCHITECTURAL DIAGRAM · ART MAP · WARM–COOL FIELDS |
-| [xxd-panel-058](https://github.com/nevertoday/xxd-panel-058) | SUBTEXT READING · GEOMETRIC MINIMALISM · CONCEPTUAL LANDSCAPE · SOFT HANDMADE TEXTURE · PALE SPACE |
-| [xxd-panel-059](https://github.com/nevertoday/xxd-panel-059) | HAND-DRAWN STORYTELLING · CHILDLIKE METAPHOR · WARM PAPER · GENTLE HUMOUR · POETIC ASIDE |
-| [xxd-panel-060](https://github.com/nevertoday/xxd-panel-060) | BLACK PRIMARY FORM · IMMENSE NEGATIVE SPACE · HALFTONE DISSOLUTION · ZEN REFLECTION · FRAGMENTS OF THOUGHT |
-| [xxd-panel-061](https://github.com/nevertoday/xxd-panel-061) | SELECTIVE MEMORY · 3–6 FRAGMENTS · CUT-PAPER COLOUR · RISOGRAPH · IMPROVISED EDITORIAL LAYOUT |
-| [xxd-panel-062](https://github.com/nevertoday/xxd-panel-062) | MINIMAL BLACK LINE · ONE ACCENT COLOUR · CLEVER AWKWARDNESS · PALE PAPER · PROFESSIONAL WHITESPACE |
-| [xxd-panel-063](https://github.com/nevertoday/xxd-panel-063) | CORE MASK · PIXEL FORMS · NESTED NEGATIVE SPACE · SUBTLE GLITCH · LIMITED PALETTE |
-| [xxd-panel-064](https://github.com/nevertoday/xxd-panel-064) | TORN PAPER · AGED COLLAGE · PENCIL AND INK · TYPEWRITER MICROCOPY · POETIC ARCHIVE |
-| [xxd-panel-065](https://github.com/nevertoday/xxd-panel-065) | BLACK STRUCTURE · TWO SOURCE-COLOUR LINES · MISREGISTRATION · VINTAGE PRINT RHYTHM · MICROTYPE |
-| [xxd-panel-066](https://github.com/nevertoday/xxd-panel-066) | CHILDLIKE NARRATIVE · AWKWARD BLACK LINE · 3–6 FLAT COLOURS · HEALING PALETTE · HANDWRITTEN OBSERVATION |
-| [xxd-panel-067](https://github.com/nevertoday/xxd-panel-067) | FIXED RED–BLUE INK · HAND-DRAWN DUAL INK · CHILDLIKE HUMOUR · EVERYDAY OBSERVATION · PALE PAPER |
-| [xxd-panel-068](https://github.com/nevertoday/xxd-panel-068) | CHINESE XIEYI PLACEMENT · WHITE AS INK · INK LINE AND PALE COLOUR · INSCRIPTION TYPE · MODERN EDITORIAL |
-| [xxd-panel-069](https://github.com/nevertoday/xxd-panel-069) | BROAD-BRUSH WINDOW · VITAL SOURCE COLOUR · FINE CONTOURS · BOUNDARY CROSSINGS · WARM-WHITE SPACE |
-| [xxd-panel-070](https://github.com/nevertoday/xxd-panel-070) | HAND-DRAWN CONTOURS · BRIGHT IMPASTO／TRANSLUCENT COLOUR · MINIATURE SUBJECT · WARM-WHITE SPACE · TYPEWRITER EDITORIAL TYPE |
-| [xxd-panel-071](https://github.com/nevertoday/xxd-panel-071) | SOFT PASTEL · PASTEL CRAYON · SOLUBLE PENCIL · NEAR-WHITE PAPER · FLOATING MEMORIES · POETIC HANDWRITING |
-| [xxd-panel-072](https://github.com/nevertoday/xxd-panel-072) | TRANSLUCENT FROSTED WINDOWS · REGIONAL SOFT FOCUS · MINIMAL GEOMETRY · RECOGNISABLE SILHOUETTE · MODERN TYPE |
-| [xxd-panel-073](https://github.com/nevertoday/xxd-panel-073) | ISOMETRIC MINIATURE ARCHITECTURE · CUT CUBE · CONTINENTAL-SHELF SECTION · RATIONAL SCAFFOLDING · TEXTURED PAPER |
-| [xxd-panel-074](https://github.com/nevertoday/xxd-panel-074) | STANDARD ROUNDED SQUARE · FRONT PSEUDO-3D／2.5D · SOURCE-SOUL EXTRACTION · MATTE SCULPTURE · BRAND ICON |
-| [xxd-panel-075](https://github.com/nevertoday/xxd-panel-075) | DARK CRAYON · IVORY HANDMADE PAPER · SOFT IRREGULAR FIELD · RISOGRAPH GRAIN · WHITESPACE · PRIVATE TYPEWRITER NOTE |
-| [xxd-panel-076](https://github.com/nevertoday/xxd-panel-076) | ROUGH DARK CRAYON · CHARCOAL · BRIGHT MACARON BLOCKS · 45% CONTINUOUS WHITESPACE · NATURAL PAPER · OBSERVATION NOTES |
-| [xxd-panel-077](https://github.com/nevertoday/xxd-panel-077) | MINIMAL PAPER SCULPTURE · CLEAR CUT-PAPER CONTOUR · LAYERED PLANES · SOFT SHADOW · HUMANIST MACARON · TRAVEL EDITORIAL |
-| [xxd-panel-078](https://github.com/nevertoday/xxd-panel-078) | IVORY COTTON PAPER · DEEP DEBOSS · RECESSED CHAMPAGNE FOIL · FINE-LINE MARK · BLIND PRESSURE · UNDERSTATED LUXURY |
-| [xxd-panel-079](https://github.com/nevertoday/xxd-panel-079) | GEOMETRIC STRAIGHTS · FREE ORGANIC CURVES · PEN AND WASH · UNFINISHED QUALITY · BROAD PAPER WHITE · EDITORIAL TYPE |
-| [xxd-panel-080](https://github.com/nevertoday/xxd-panel-080) | SOFT ORGANIC GEOMETRY · DIGITAL GOUACHE · CRAYON GRAIN · BOTANICAL COLOUR · SOURCE-BORN METAPHOR · EMOTIONAL SPACE |
-| [xxd-panel-081](https://github.com/nevertoday/xxd-panel-081) | EVEN-WEIGHT COLOURED MONOLINE · OPEN CONTOUR · DENSITY HIERARCHY · 2–4 SPOT INKS · RISOGRAPH GRAIN · KEEPSAKE NARRATIVE |
-| [xxd-panel-082](https://github.com/nevertoday/xxd-panel-082) | IRREGULAR WATERCOLOUR FIELD · NAÏVE + WONKY · ISOMETRIC／2.5D · CHILDLIKE CONTOUR · VIVID COLOUR · SPATIAL PROTAGONIST |
-| [xxd-panel-083](https://github.com/nevertoday/xxd-panel-083) | UGLY-CUTE DOODLE · WONKY TREMBLING CONTOUR · CONTROLLED WRONGNESS · ONE COMIC PROTAGONIST · ROUGH CRAYON · SPARSE-STRANGE-CLUMSY-ACCURATE |
-| [xxd-panel-084](https://github.com/nevertoday/xxd-panel-084) | MINIMAL URBAN LINEWORK · GEOMETRIC SCAFFOLD · DENSITY-BASED STIPPLING · LEADING LINES · RESTRAINED COLOUR · POETIC WHITESPACE |
-| [xxd-panel-085](https://github.com/nevertoday/xxd-panel-085) | HANDMADE MINIATURE STAGE · COLLECTIBLE DIMENSIONAL COVER · CLAY AND FELT · CUT PAPER AND STRING · MATTE TACTILITY · ARTFUL WHITESPACE |
-| [xxd-panel-086](https://github.com/nevertoday/xxd-panel-086) | mid-century modernist limited-colour screen print · silhouette geometry · 2–4 spot inks · dry-brush drag · one focus · generous whitespace |
-| [xxd-panel-087](https://github.com/nevertoday/xxd-panel-087) | physical pin-and-string relationship map · vermilion thread · emergent geometry · handwritten notes · research-wall whitespace |
-| [xxd-panel-088](https://github.com/nevertoday/xxd-panel-088) | experimental typographic image · text as image · deconstructed type · dot-matrix contour · density gradient · visual poetry |
-| [xxd-panel-089](https://github.com/nevertoday/xxd-panel-089) | personal life-journal vignette · one protagonist · a few daily fragments · loose hand line · watercolour and coloured pencil · mature whitespace |
-| [xxd-panel-090](https://github.com/nevertoday/xxd-panel-090) | schematic visual thinking map · concept centre · text nodes · geometric scaffold · trajectory arrows · visual notation · generous whitespace |
-| [xxd-panel-091](https://github.com/nevertoday/xxd-panel-091) | monochrome blue-pen narrative sketch · cobalt／pen blue／ultramarine／indigo · directional hatching · searching lines · natural paper white |
-| [xxd-panel-092](https://github.com/nevertoday/xxd-panel-092) | Expressive pen · loose contours · geometric and scribble hatching · negative-space composition |
-| [xxd-panel-093](https://github.com/nevertoday/xxd-panel-093) | Independent original aesthetic · photo-grounded transformation · flexible multi-format delivery |
-| [xxd-panel-094](https://github.com/nevertoday/xxd-panel-094) | Fine pen-and-ink · selective solid black · source-derived spot colour · vast negative space · vintage book illustration |
-| [xxd-panel-095](https://github.com/nevertoday/xxd-panel-095) | Independent original aesthetic · photo-grounded transformation · flexible multi-format delivery |
-| [xxd-panel-096](https://github.com/nevertoday/xxd-panel-096) | Independent original aesthetic · photo-grounded transformation · flexible multi-format delivery |
-| [xxd-panel-097](https://github.com/nevertoday/xxd-panel-097) | Mid-century vernacular commercial graphic · schematic line drawing · two-colour spot printing · functional humour |
-| [xxd-panel-098](https://github.com/nevertoday/xxd-panel-098) | faux-naïve watercolour picture-book illustration · loose ink line · flat watercolour／gouache · symbolic form · innocent perspective · mature narrative composition |
-| [xxd-panel-099](https://github.com/nevertoday/xxd-panel-099) | flat vector brand mascot · bold black contour · rounded geometry · exaggerated proportion · 2–4 branded colours · oversized type background |
-| [xxd-panel-100](https://github.com/nevertoday/xxd-panel-100) | naïve folk-inspired flat narrative · primitive forms · simplified silhouettes · flattened perspective · crayon／oil-pastel grain · warm paper · vivid limited colour |
-| [xxd-panel-101](https://github.com/nevertoday/xxd-panel-101) | 3×3 memory icons · private-journal feeling · naïve doodles · retro candy colour · handwritten notes |
-| [xxd-panel-102](https://github.com/nevertoday/xxd-panel-102) | soothing geometry · soft shapes · flat composition · warm healing colour · easy negative space |
-| [xxd-panel-103](https://github.com/nevertoday/xxd-panel-103) | vivid abstract assembly · large colour blocks · abstract disassembly and recombination · bright palette · bold rhythm |
-| [xxd-panel-104](https://github.com/nevertoday/xxd-panel-104) | halftone print · coloured linear interventions · one visual centre · contemplative negative space |
-| [xxd-panel-105](https://github.com/nevertoday/xxd-panel-105) | intelligent aesthetic selection · one visual centre · poetic minimalist paper collage · monoprint／screen print／Risograph texture · soft limited palette · generous negative space |
-| [xxd-panel-106](https://github.com/nevertoday/xxd-panel-106) | pastel pixel memory · 2–4 visual anchors · regular grid · modular colour blocks · local dithering · one visual core · generous negative space |
-| [xxd-panel-107](https://github.com/nevertoday/xxd-panel-107) | image-word poetry · readable rebus sentence · modern hand-drawn image words · luminous soft blocks · exact 50:50 pairing · generous whitespace |
-| **[xxd-panel-108](https://github.com/nevertoday/xxd-panel-108)** | contemporary folk paper-cut collage · simplified silhouettes · torn edges · vivid source colour · print texture · generous whitespace |
-<!-- xxd-panel-catalog:end -->
+- With every value given, nothing is asked; otherwise only the missing values are. Pass a folder instead of `photo.jpg` to batch.
+- Combinations are generated one by one: 2 modes × 3 sizes = 6 images, each composed for its own canvas rather than cropped.
+- Comparisons are exactly 50:50. Usually the model paints only the design half and a script places the untouched photo beside it, so the split is centred and the photo is unchanged.
+- Files are named like `source-001-street-top-bottom-3x4-1152x1536.png`, all in one flat task folder.
+- Only layout, size, text mode and language are remembered, never photos, copy or keys.
 
 <!-- xxd-readme-ads:start -->
 ## About XXD

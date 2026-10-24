@@ -1,7 +1,7 @@
 interface:
   display_name: "/xxd-panel-108"
-  short_description: "New folk paper-cut collage with symbolic shapes and quiet editorial whitespace."
-  default_prompt: "Use $xxd-panel-108 on one image or an image directory. Read the bundled Chinese original brief as the sole aesthetic authority; keep paired modes strict 50:50 with no third band; isolate every source; and create one complete PNG canvas per output."
+  short_description: "新民艺剪纸志：把照片剪成章印般的小块彩纸拼贴，带版画颗粒和大片留白"
+  default_prompt: "Use $xxd-panel-108 to turn my photo into New Folk Paper-Cut Journal artwork."
 
 policy:
   allow_implicit_invocation: true

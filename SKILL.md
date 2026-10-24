@@ -1,6 +1,6 @@
 ---
 name: xxd-panel-108
-description: "Turn each source photograph into a strict 50:50 top-bottom or left-right poster whose transformed half distils the subject into contemporary folk-art paper-cut collage with print texture and generous whitespace. Use when the user invokes xxd-panel-108 or requests this exact independent Panel style."
+description: "XXD Panel 108｜New Folk Paper-Cut Journal: rebuilds the key subject, outline and pose of a photo as a contemporary folk-art paper-cut collage — silhouettes, flat colour pieces, carved lines and positive and negative shapes that look like separate sheets of coloured paper, slightly naive, symbolic and geometric, a small seal-like main motif set off-centre or near an edge inside large off-white paper space, screen-print grain, slight misregistration and faded ink with visible paper fibre, two to four distinct colours taken from the photo, and a few small notes such as a short title, number or colour reference in any language. Outputs PNG top-bottom or left-right comparisons, design-only images, or phone/tablet/desktop/watch wallpapers, from one photo or a folder. Use when the user invokes xxd-panel-108 or asks for folk-art paper-cut, screen-print collage or seal-like minimalist illustration from a photo."
 ---
 
 # XXD Panel 108
